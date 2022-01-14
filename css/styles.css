@@ -1,9 +1,46 @@
 :root {
   --main-color: #212121;
-  --main-font: 'Roboto', sans-serif;
+  --logo-color: #000000;
+  --logo-color-decoration: #2196F3;
+  --font-main: 16px;
+  --font-rem-26: 1.625rem;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
 }
 
 body {
   color: var(--text-color);
-  font-family: var(--main-font)
+  font-family: var(--font-roboto);
+  font-size: var(--font-main);  
+}
+
+button {
+  font-family: inherit;
+}
+
+/* header */
+.main-logo {
+  font-family: var(--font-raleway);
+  color: var(--logo-color);
+  font-size: var(--font-rem-26);   
+}
+
+.main-logo-decoration {
+  color: var(--logo-color-decoration);
+}
+
+.main-nav, .main-nav-contact {
+  list-style: none;
+}
+
+.link, .main-logo {
+  text-decoration: none;
+}
+
+.link, .link:visited {
+  color: var(--main-color);
+}
+
+.link:hover {
+  color: var(--logo-color-decoration);
 }
