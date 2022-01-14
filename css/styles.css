@@ -9,6 +9,7 @@
   --font-rem-14: 0.875rem;
   --font-rem-16: 1rem;
   --font-rem-44: 2.75rem;
+  --f-weight-700: 700;
   --l-spacing-3: 0.03em;
   --l-spacing-2: 0.02em;
   --l-spacing-6: 0.06em;
@@ -66,7 +67,7 @@ body {
   color: var(--color-decoration);
 }
 
-/* main */
+/* hero */
 .hero {
   background-color: var(--color-dark);
   text-align: center;
@@ -84,7 +85,13 @@ body {
   font-family: inherit;
   color: var(--color-light);
   font-size: var(--font-rem-16);
+  font-weight: var(--f-weight-700);
   line-height: var(--l-height-30);
   letter-spacing: var(--l-spacing-6);
-  
+  cursor: pointer;
+}
+
+/* list */
+.list-items {
+  list-style: none;
 }
