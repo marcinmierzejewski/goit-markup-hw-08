@@ -9,13 +9,13 @@
   --color-light-grey: #F5F4FA;
   /* font-size */
   --font-main: 16px;  
-  --font-rem-14: 0.875rem;
+  --font-rem-14: 0.875rem;  
   --font-rem-16: 1rem;
+  --font-rem-18: 1.125rem;
   --font-rem-26: 1.625rem;
   --font-rem-36: 2.25rem;
   --font-rem-44: 2.75rem;
   /* font-weight */
-  --f-weight-400: 400;
   --f-weight-500: 500;
   --f-weight-700: 700;  
   --f-weight-900: 900;
@@ -27,8 +27,10 @@
   --l-height-16: 1rem;
   --l-height-19: 1.1875rem;
   --l-height-24: 1.5rem;
+  --l-height-26: 1.625rem;
   --l-height-30: 1.875rem;
-  --l-height-31: 1.9375rem; 
+  --l-height-31: 1.9375rem;
+  --l-height-36: 2.25rem;  
   --l-height-42: 2.625rem; 
   --l-height-60: 3.75rem;  
   /* font-family */
@@ -147,7 +149,7 @@ body {
   background-color: var(--color-light-grey);
 }
 
-.picture-container {
+.our-team-picture {
   width: 270px;
   height: 368px;
   background-color: var(--color-light);
@@ -158,11 +160,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.picture-container h4 {
+.our-team-picture-caption {
   font-weight: var(--f-weight-500);
 }
 
-.picture-container p {
+.our-team-picture-content {
   color: var(--color-grey);
 }
 
@@ -185,11 +187,49 @@ body {
 .footer-list {
   font-size: var(--font-rem-14);
   line-height: var(--l-height-24);
-  letter-spacing: var(--l-spacing-3);
-  font-weight: var(--f-weight-400);  
+  letter-spacing: var(--l-spacing-3);   
   font-style: normal;  
 }
 
 .contact {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio */
+/* selection */
+.selection {
+  text-align: center;
+}
+
+.selection-btn {
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--color-light-grey);
+  font-size: var(--font-rem-16);
+  line-height: var(--l-height-26);
+  letter-spacing: var(--l-spacing-3);
+  font-weight: var(--f-weight-500);
+  border: none;
+  border-radius: 4px;
+}
+
+.selection-btn:hover,
+.selection-btn:focus {
+  background-color: var(--color-decoration);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.gallery-picture-caption {
+  font-size: var(--font-rem-18);
+  line-height: var(--l-height-36);
+  letter-spacing: var(--l-spacing-6);
+  font-weight: var(--f-weight-700);
+}
+
+.gallery-picture-content {
+  line-height: var(--l-height-30);
+  letter-spacing: var(--l-spacing-3);
+  color: var(--color-grey);
 }
