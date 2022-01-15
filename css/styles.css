@@ -15,6 +15,7 @@
   --font-rem-36: 2.25rem;
   --font-rem-44: 2.75rem;
   /* font-weight */
+  --f-weight-400: 400;
   --f-weight-500: 500;
   --f-weight-700: 700;  
   --f-weight-900: 900;
@@ -141,6 +142,7 @@ body {
   letter-spacing: var(--l-spacing-3);
 }
 
+/* our team */
 .our-team-container {
   background-color: var(--color-light-grey);
 }
@@ -162,4 +164,32 @@ body {
 
 .picture-container p {
   color: var(--color-grey);
+}
+
+/* footer */
+.footer-container {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.footer-logo {
+  font-family: var(--font-raleway);
+  font-size: var(--font-rem-26);
+  letter-spacing: var(--l-spacing-3);
+  line-height: var(--l-height-31);
+  font-weight: var(--f-weight-700);
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-list {
+  font-size: var(--font-rem-14);
+  line-height: var(--l-height-24);
+  letter-spacing: var(--l-spacing-3);
+  font-weight: var(--f-weight-400);  
+  font-style: normal;  
+}
+
+.contact {
+  color: rgba(255, 255, 255, 0.6);
 }
