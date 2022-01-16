@@ -71,6 +71,10 @@ body {
   font-weight: var(--f-weight-500);
 }
 
+.main-nav-contact {
+  color: var(--color-grey);
+}
+
 .link,
 .main-logo {
   text-decoration: none;
@@ -78,7 +82,7 @@ body {
 
 .link,
 .link:visited {
-  color: var(--color-main);
+  color: inherit;
 }
 
 .link:hover,
@@ -114,6 +118,12 @@ body {
   border: none;
 }
 
+.hero-header-button:hover,
+.hero-header-button:focus {
+  color: inherit;
+  background-color: var(--color-light-grey);
+}
+
 /* list */
 .list {
   list-style: none;
@@ -141,6 +151,7 @@ body {
   font-size: var(--font-rem-36);
   line-height: var(--l-height-42);
   letter-spacing: var(--l-spacing-3);
+  font-weight: var(--f-weight-700);
 }
 
 /* our team */
