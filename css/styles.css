@@ -118,12 +118,6 @@ body {
   border: none;
 }
 
-.hero-header-button:hover,
-.hero-header-button:focus {
-  color: inherit;
-  background-color: var(--color-light-grey);
-}
-
 /* list */
 .list {
   list-style: none;
