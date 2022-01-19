@@ -44,9 +44,28 @@ body {
   font-size: var(--font-main);
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 1600px;
+}
+
 /* header */
 .container-main-nav {
   background-color: var(--color-light);
+  padding: 24px 227px 25px 215px;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .main-logo {
@@ -64,6 +83,8 @@ body {
 
 .main-nav,
 .main-nav-contact {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   font-size: var(--font-rem-14);
   letter-spacing: var(--l-spacing-2);
