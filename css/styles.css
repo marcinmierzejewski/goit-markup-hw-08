@@ -140,6 +140,13 @@ ul {
   text-align: center;
 }
 
+.hero-container { 
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;  
+}
+
 .hero-header {
   font-size: var(--font-rem-44);
   line-height: var(--l-height-60);
@@ -147,6 +154,9 @@ ul {
   color: var(--color-light);
   letter-spacing: var(--l-spacing-6);
   text-transform: uppercase;
+  width: 696px;
+  
+  
 }
 
 .hero-header-button {
@@ -160,6 +170,9 @@ ul {
   cursor: pointer;
   box-shadow: 0 4px 4px #00000026;
   border: none;
+  padding: 10px 41px 10px 42px;
+  margin-top: 30px;
+  border-radius: 4px;
 }
 
 /* list */
