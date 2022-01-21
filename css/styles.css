@@ -73,6 +73,9 @@ ul {
   list-style: none;
 }
 
+.list-items > li:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* =====header====== */
 .header {
@@ -184,16 +187,13 @@ ul {
 .advantage {
   align-items: center;
   justify-content: center;
+  padding-bottom: 0;
 }
 
 .list-advantage {
   font-size: var(--font-rem-14);
   line-height: var(--l-height-16);
   letter-spacing: var(--l-spacing-3);
-}
-
-.list-items > li:not(:last-child) {
-  margin-right: 30px;
 }
 
 .list-header {
@@ -219,6 +219,10 @@ ul {
   line-height: var(--l-height-42);
   letter-spacing: var(--l-spacing-3);
   font-weight: var(--f-weight-700);
+}
+
+.what-about-list {
+  padding-top: 50px;
 }
 
 /* ======our team====== */
