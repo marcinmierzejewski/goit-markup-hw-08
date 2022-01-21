@@ -55,6 +55,15 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: var(--width-container);
   padding: 0 15px;
@@ -227,12 +236,13 @@ ul {
 
 /* ======our team====== */
 .our-team {
+  background-color: var(--color-light-grey);
   align-items: center;
   justify-content: center;
 }
 
-.our-team-container {
-  background-color: var(--color-light-grey);
+.section-title {
+  padding-bottom: 50px;
 }
 
 .our-team-picture {
@@ -249,6 +259,8 @@ ul {
 
 .our-team-picture-caption {
   font-weight: var(--f-weight-500);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .our-team-picture-content {
