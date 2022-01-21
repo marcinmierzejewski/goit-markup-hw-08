@@ -69,15 +69,21 @@ ul {
   display: flex;
 }
 
-/* header */
+.list {
+  list-style: none;
+}
+
+
+/* =====header====== */
 .header {
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-main-nav {
   background-color: var(--color-light);
   align-items: center;
-  margin: 0 auto;
 }
 
 .main-logo {
@@ -120,31 +126,32 @@ ul {
   margin-right: 50px;
 }
 
-.link {
+.link,
+.main-logo {
   text-decoration: none;
 }
 
-.link,
-.link:visited {
+.link {
   color: inherit;
 }
 
 .link:hover,
 .link:focus {
-  color: var(--color-decoration);
+  color: var(--color-decoration);  
 }
 
-/* hero */
+/* ========hero======*/
 .hero {
   background-color: var(--color-dark);
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-container { 
   height: 600px;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;  
 }
 
 .hero-header {
@@ -154,9 +161,7 @@ ul {
   color: var(--color-light);
   letter-spacing: var(--l-spacing-6);
   text-transform: uppercase;
-  width: 696px;
-  
-  
+  width: 696px;  
 }
 
 .hero-header-button {
@@ -175,15 +180,20 @@ ul {
   border-radius: 4px;
 }
 
-/* list */
-.list {
-  list-style: none;
+/* ======advantage====== */
+.advantage {
+  align-items: center;
+  justify-content: center;
 }
 
-.list-items {
+.list-advantage {
   font-size: var(--font-rem-14);
   line-height: var(--l-height-16);
   letter-spacing: var(--l-spacing-3);
+}
+
+.list-items > li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .list-header {
@@ -194,9 +204,15 @@ ul {
 .list-contents {
   line-height: var(--l-height-24);
   color: var(--color-grey);
+  padding-top: 10px;
 }
 
-/* what about */
+/* ======what about====== */
+.what-about {
+  align-items: center;
+  justify-content: center;
+}
+
 .section-title {
   text-align: center;
   font-size: var(--font-rem-36);
@@ -205,7 +221,12 @@ ul {
   font-weight: var(--f-weight-700);
 }
 
-/* our team */
+/* ======our team====== */
+.our-team {
+  align-items: center;
+  justify-content: center;
+}
+
 .our-team-container {
   background-color: var(--color-light-grey);
 }
@@ -230,7 +251,7 @@ ul {
   color: var(--color-grey);
 }
 
-/* footer */
+/* ======footer====== */
 .footer-container {
   background-color: var(--color-dark);
   color: var(--color-light);
