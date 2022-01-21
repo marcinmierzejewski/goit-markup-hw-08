@@ -156,6 +156,10 @@ figure {
   color: var(--color-decoration);  
 }
 
+.link-active {
+  color: var(--color-decoration);
+}
+
 /* ========hero======*/
 .hero {
   background-color: var(--color-dark);

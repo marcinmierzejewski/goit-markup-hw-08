@@ -12,32 +12,34 @@
       rel="stylesheet"
     />
     <!-- modern-normalize -->
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="modern-normalize/modern-normalize.css">
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- header -->
-    <header class="container-main-nav">
-      <a class="main-logo" href="index.html"
-        ><span class="main-logo-decoration">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="main-nav">
-          <li><a class="link" href="#">Agencja</a></li>
-          <li><a class="link" href="portfolio.html">Portfolio</a></li>
-          <li><a class="link" href="#">Kontakt</a></li>
+    <header class="header disp-flex">
+      <div class="container-main-nav disp-flex container">
+        <a class="main-logo" href="index.html"
+          ><span class="main-logo-decoration">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="main-nav disp-flex">
+            <li class="main-nav-list"><a class="link" href="#">Agencja</a></li>
+            <li class="main-nav-list"><a class="link link-active" href="portfolio.html">Portfolio</a></li>
+            <li class="main-nav-list"><a class="link" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="main-nav-contact disp-flex">
+          <li class="main-nav-contact-list">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="main-nav-contact-list"><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
-      </nav>
-      <ul class="main-nav-contact">
-        <li>
-          <a class="link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
+      </div>
     </header>
 
     <!-- main -->
@@ -205,20 +207,20 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-container">
+    <footer class="footer disp-flex">
+      <div class="footer-container container">
         <a class="footer-logo" href="index.html"
           ><span class="main-logo-decoration">Web</span>Studio</a
         >
         <address>
           <ul class="list footer-list">
-            <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li>
+            <li class="footer-list-items">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li class="footer-list-items">
               <a class="link contact" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="footer-list-items">
               <a class="link contact" href="tel:+48111111111"
                 >+48 111 111 111</a
               >
