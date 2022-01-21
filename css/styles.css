@@ -7,6 +7,7 @@
   --color-dark: #2f303a;
   --color-grey: #757575;
   --color-light-grey: #f5f4fa;
+  --color-border-header: #ececec;
   /* font-size */
   --font-main: 16px;
   --font-rem-14: 0.875rem;
@@ -90,7 +91,12 @@ figure {
   padding-bottom: 50px;
 }
 
-/* =====header====== */
+/* 
+============================================================
+HEADER
+============================================================
+*/
+
 .header {
   text-align: center;
   align-items: center;
@@ -100,6 +106,7 @@ figure {
 .container-main-nav {
   background-color: var(--color-light);
   align-items: center;
+  border-bottom: 1px solid var(--color-border-header);
 }
 
 .main-logo {
@@ -160,6 +167,11 @@ figure {
   color: var(--color-decoration);
 }
 
+/* 
+============================================================
+INDEX
+============================================================
+*/
 /* ========hero======*/
 .hero {
   background-color: var(--color-dark);
@@ -267,7 +279,11 @@ figure {
   color: var(--color-grey);
 }
 
-/* ======footer====== */
+/* 
+============================================================
+FOOTER
+============================================================
+*/
 .footer {
   background-color: var(--color-dark);
   align-items: center;
@@ -306,10 +322,30 @@ figure {
   padding-bottom: 9px;
 }
 
-/* portfolio */
+/* 
+============================================================
+PORTFOLIO
+============================================================
+*/
 /* selection */
+.selection-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.ble {
+  align-items: center;
+  justify-content: center;
+}
+
 .selection {
   text-align: center;
+}
+
+.selection-list {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .selection-btn {
@@ -322,6 +358,7 @@ figure {
   font-weight: var(--f-weight-500);
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .selection-btn:hover,
@@ -333,7 +370,15 @@ figure {
   cursor: pointer;
 }
 
+.selection-items:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* gallery */
+.gallery-list {
+  flex-wrap: wrap;
+}
+
 .gallery-picture-caption {
   font-size: var(--font-rem-18);
   line-height: var(--l-height-36);
