@@ -86,6 +86,10 @@ figure {
   margin-right: 30px;
 }
 
+.section-title {
+  padding-bottom: 50px;
+}
+
 /* =====header====== */
 .header {
   text-align: center;
@@ -230,19 +234,11 @@ figure {
   font-weight: var(--f-weight-700);
 }
 
-.what-about-list {
-  padding-top: 50px;
-}
-
 /* ======our team====== */
 .our-team {
   background-color: var(--color-light-grey);
   align-items: center;
   justify-content: center;
-}
-
-.section-title {
-  padding-bottom: 50px;
 }
 
 .our-team-picture {
@@ -268,6 +264,13 @@ figure {
 }
 
 /* ======footer====== */
+.footer {
+  background-color: var(--color-dark);
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px;
+}
+
 .footer-container {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -288,10 +291,15 @@ figure {
   line-height: var(--l-height-24);
   letter-spacing: var(--l-spacing-3);
   font-style: normal;
+  padding-top: 20px;
 }
 
 .contact {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list-items:not(:last-child) {
+  padding-bottom: 9px;
 }
 
 /* portfolio */
