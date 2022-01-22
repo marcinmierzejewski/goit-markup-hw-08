@@ -8,6 +8,7 @@
   --color-grey: #757575;
   --color-light-grey: #f5f4fa;
   --color-border-header: #ececec;
+  --color-border-gallery: #eeeeee;
   /* font-size */
   --font-main: 16px;
   --font-rem-14: 0.875rem;
@@ -180,10 +181,10 @@ INDEX
   justify-content: center;
 }
 
-.hero-container { 
-  height: 600px;
-  align-items: center;
+.hero-container {
   justify-content: center;
+  padding-top: 200px; 
+  padding-bottom: 200px; 
 }
 
 .hero-header {
@@ -258,8 +259,6 @@ INDEX
 }
 
 .our-team-picture {
-  width: 270px;
-  height: 368px;
   background-color: var(--color-light);
   text-align: center;
   font-size: var(--font-rem-16);
@@ -277,6 +276,7 @@ INDEX
 
 .our-team-picture-content {
   color: var(--color-grey);
+  padding-bottom: 30px;
 }
 
 /* 
@@ -382,19 +382,28 @@ PORTFOLIO
   gap: 30px;
 }
 
-/* .gallery-list-item:nth-child(-n + 6) {
-  padding-bottom: 30px;
-} */
+.gallery-picture {
+  width: 370px;
+  height: 404px;
+}
 
 .gallery-picture-caption {
   font-size: var(--font-rem-18);
   line-height: var(--l-height-36);
   letter-spacing: var(--l-spacing-6);
   font-weight: var(--f-weight-700);
+  padding-bottom: 4px;
 }
 
 .gallery-picture-content {
   line-height: var(--l-height-30);
   letter-spacing: var(--l-spacing-3);
   color: var(--color-grey);
+}
+
+.gallery-figcaption {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-border-gallery);
+  border-left: 1px solid var(--color-border-gallery);
+  border-right: 1px solid var(--color-border-gallery);
 }
