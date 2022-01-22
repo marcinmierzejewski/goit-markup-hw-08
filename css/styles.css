@@ -39,6 +39,11 @@
   --font-roboto: "Roboto", sans-serif;
   --font-raleway: "Raleway", sans-serif;
   --width-container: 1200px;
+  /* value padding, margin */
+  --gap-15: 15px;
+  --gap-30: 30px;
+  --gap-50: 50px;
+  --gap-94: 94px;
 }
 
 body {
@@ -68,12 +73,12 @@ figure {
 
 .container {
   width: var(--width-container);
-  padding: 0 15px;
+  padding: 0 var(--gap-15);
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--gap-94);
+  padding-bottom: var(--gap-94);
 }
 
 .disp-flex {
@@ -85,11 +90,11 @@ figure {
 }
 
 .list-items > li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--gap-30);
 }
 
 .section-title {
-  padding-bottom: 50px;
+  padding-bottom: var(--gap-50);
 }
 
 /* 
@@ -129,7 +134,7 @@ HEADER
 .main-nav,
 .main-nav-contact {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   list-style: none;
   font-size: var(--font-rem-14);
   letter-spacing: var(--l-spacing-2);
