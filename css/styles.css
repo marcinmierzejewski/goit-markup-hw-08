@@ -377,7 +377,14 @@ PORTFOLIO
 /* gallery */
 .gallery-list {
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
+
+/* .gallery-list-item:nth-child(-n + 6) {
+  padding-bottom: 30px;
+} */
 
 .gallery-picture-caption {
   font-size: var(--font-rem-18);
