@@ -382,11 +382,6 @@ PORTFOLIO
   gap: 30px;
 }
 
-.gallery-picture {
-  width: 370px;
-  height: 404px;
-}
-
 .gallery-picture-caption {
   font-size: var(--font-rem-18);
   line-height: var(--l-height-36);
