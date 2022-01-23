@@ -94,7 +94,7 @@ figure {
 }
 
 .section-title {
-  padding-bottom: var(--gap-50);
+  margin-bottom: var(--gap-50);
 }
 
 /* 
@@ -144,7 +144,7 @@ HEADER
 
 .main-nav-contact {
   color: var(--color-grey);
-  margin-left: 384px;
+  margin-left: auto;
 }
 
 .main-nav > .main-nav-list:not(:last-child) {
@@ -316,7 +316,7 @@ FOOTER
   line-height: var(--l-height-24);
   letter-spacing: var(--l-spacing-3);
   font-style: normal;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .contact {
@@ -324,7 +324,7 @@ FOOTER
 }
 
 .footer-list-items:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 /* 
@@ -350,7 +350,7 @@ PORTFOLIO
 .selection-list {
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .selection-btn {
