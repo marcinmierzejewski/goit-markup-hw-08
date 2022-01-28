@@ -7,6 +7,7 @@
   --color-dark: #2f303a;
   --color-grey: #757575;
   --color-light-grey: #f5f4fa;
+  --color-social: #AFB1B8;
   --color-border-header: #ececec;
   --color-border-gallery: #eeeeee;
   /* font-size */
@@ -48,6 +49,7 @@
   --val-9: 9px;
   --val-10: 10px;
   --val-15: 15px;
+  --val-16: 16px;
   --val-20: 20px;
   --val-22: 22px;
   --val-24: 24px;
@@ -320,7 +322,33 @@ INDEX
 
 .our-team-picture-content {
   color: var(--color-grey);
+}
+
+.our-team-social-list {
+  align-items: center;
+  justify-content: center;
   padding-bottom: var(--val-30);
+  padding-top: var(--val-16);
+}
+
+.social-list-link {
+  fill: var(--color-social);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: var(--val-10);  
+}
+
+.social-list-link:hover {
+  fill: var(--color-light);
+  background-color: var(--color-decoration);  
+  border-radius: 50%;
+  
 }
 
 /* 
