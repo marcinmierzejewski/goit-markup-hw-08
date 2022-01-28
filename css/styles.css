@@ -197,16 +197,21 @@ INDEX
 */
 /* ========hero======*/
 .hero {
-  background-color: var(--color-dark);
+  background-image: url("../images/index/header-background.jpg");
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-container {
-  width: 37.5rem;
+  height: 37.5rem;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 }
 
 .hero-header {
@@ -257,6 +262,22 @@ INDEX
   line-height: var(--l-height-24);
   color: var(--color-grey);
   margin-top: var(--val-10);
+}
+
+.advantage-item svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-icon-container {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F4FA;
+  border-radius: 4px;
 }
 
 /* ======what about====== */
