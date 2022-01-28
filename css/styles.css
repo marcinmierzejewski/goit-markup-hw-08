@@ -60,6 +60,7 @@
   --val-46: 46px;
   --val-50: 50px;
   --val-60: 60px;
+  --val-70: 70px;
   --val-93: 93px;
   --val-94: 94px;
   --val-200: 200px;
@@ -416,6 +417,46 @@ FOOTER
 
 .footer-list-items:not(:last-child) {
   margin-bottom: var(--val-9);
+}
+
+.footer-right-side {
+  margin-left: var(--val-70);
+}
+
+.footer-join {
+  font-weight: var(--f-weight-700);
+  font-size: var(--font-rem-14);
+  line-height: var(--l-height-16);
+  letter-spacing: var(--l-spacing-3);
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+.footer-social-list {
+  align-items: center;
+  justify-content: center;  
+  padding-top: var(--val-20);
+}
+
+.footer-list-link {
+  fill: var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);  
+  border-radius: 50%;  
+  width: 44px;
+  height: 44px;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-right: var(--val-10);  
+}
+
+.footer-list-link:hover {
+  fill: var(--color-light);
+  background-color: var(--color-decoration);  
+  border-radius: 50%;  
 }
 
 /* 
