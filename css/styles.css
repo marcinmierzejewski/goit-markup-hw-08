@@ -204,9 +204,9 @@ INDEX
 }
 
 .hero-container {
+  width: 37.5rem;
   justify-content: center;
-  padding-top: var(--val-200);
-  padding-bottom: var(--val-200);
+  align-items: center;
 }
 
 .hero-header {
