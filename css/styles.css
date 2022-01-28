@@ -199,7 +199,10 @@ INDEX
 */
 /* ========hero======*/
 .hero {
-  background-image: url("../images/index/header-background.jpg");
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/index/header-background.jpg");
   text-align: center;
   align-items: center;
   justify-content: center;  
@@ -347,11 +350,32 @@ INDEX
 .social-list-link:hover {
   fill: var(--color-light);
   background-color: var(--color-decoration);  
-  border-radius: 50%;
-  
+  border-radius: 50%;  
 }
 
-/* 
+/* ======Clients====== */
+.clients-icon {
+  fill: var(--color-social);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-icon:hover {
+  fill: var(--color-decoration);
+  border: 1px solid var(--color-decoration);
+}
+
+.clients {
+  align-items: center;
+  justify-content: center;
+}
+
+/*
 ============================================================
 FOOTER
 ============================================================
