@@ -250,7 +250,7 @@ INDEX
 .list-advantage {
   font-size: var(--font-rem-14);
   line-height: var(--l-height-16);
-  letter-spacing: var(--l-spacing-3);
+  letter-spacing: var(--l-spacing-3);  
 }
 
 .list-header {
@@ -278,6 +278,7 @@ INDEX
   justify-content: center;
   background: #F5F4FA;
   border-radius: 4px;
+  margin-bottom: var(--val-30);
 }
 
 /* ======what about====== */
