@@ -42,6 +42,7 @@
   /* width */
   --width-container1200: 1200px;
   --width-container696: 696px;
+  --max-width: 1600px;
   /* value padding, margin */
   --val-4: 4px;
   --val-6: 6px;
@@ -227,7 +228,7 @@ INDEX
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: cover;
-  max-width: 1600px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
