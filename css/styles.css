@@ -192,6 +192,21 @@ HEADER
 .link-active {
   color: var(--color-decoration);
 }
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--color-decoration);
+  color: var(--color-decoration);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon svg {
+  margin-right: 8px;
+}
 
 /* 
 ============================================================
@@ -348,7 +363,8 @@ INDEX
   margin-right: var(--val-10);  
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   fill: var(--color-light);
   background-color: var(--color-decoration);  
   border-radius: 50%;  
@@ -366,7 +382,8 @@ INDEX
   height: 92px;
 }
 
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus  {
   fill: var(--color-decoration);
   border: 1px solid var(--color-decoration);
 }
@@ -453,7 +470,8 @@ FOOTER
   margin-right: var(--val-10);  
 }
 
-.footer-list-link:hover {
+.footer-list-link:hover,
+.footer-list-link:focus {
   fill: var(--color-light);
   background-color: var(--color-decoration);  
   border-radius: 50%;  
