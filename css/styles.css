@@ -205,7 +205,8 @@ HEADER
 }
 
 .contact-icon svg {
-  margin-right: 8px;
+  margin-right: var(--val-10);
+  fill: currentColor;
 }
 
 /* 
