@@ -10,6 +10,7 @@
   --color-social: #afb1b8;
   --color-border-header: #ececec;
   --color-border-gallery: #eeeeee;
+  --color-label: rgba(47, 48, 58, 0.8);
   /* font-size */
   --font-main: 16px;
   --font-rem-14: 0.875rem;
@@ -55,6 +56,7 @@
   --val-22: 22px;
   --val-24: 24px;
   --val-25: 25px;
+  --val-27: 27px;
   --val-30: 30px;
   --val-41: 41px;
   --val-42: 42px;
@@ -62,6 +64,7 @@
   --val-50: 50px;
   --val-60: 60px;
   --val-70: 70px;
+  --val-90: 90px;
   --val-93: 93px;
   --val-94: 94px;
   --val-200: 200px;
@@ -349,6 +352,28 @@ INDEX
   line-height: var(--l-height-42);
   letter-spacing: var(--l-spacing-3);
   font-weight: var(--f-weight-700);
+}
+
+.what-about-item {
+  position: relative;
+}
+
+.what-about-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding-top: var(--val-27);
+  padding-bottom: var(--val-27);
+  font-weight: var(--f-weight-700);
+  font-size: var(--font-rem-14);
+  line-height: var(--l-height-16);
+  text-align: center;
+  letter-spacing: var(--l-spacing-3);
+  text-transform: uppercase;
+  color: var(--color-light);
+  background-color: var(--color-label);  
 }
 
 /* ======our team====== */
