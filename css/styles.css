@@ -557,11 +557,11 @@ BACKDROP
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-backdrop) ;  
+  background-color: var(--color-backdrop);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-              visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -569,12 +569,13 @@ BACKDROP
   left: 50%;
   top: 50%;
   width: 528px;
-  height: 581px;
-  transform: translate(-50%, -50%) scale(1);  
+  min-height: 581px;
+  transform: translate(-50%, -50%) scale(1);
   margin: 0 auto;
   background-color: var(--color-light);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .close-btn {
@@ -585,8 +586,8 @@ BACKDROP
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-light);
   width: 30px;
-  height: 30px;  
-  cursor: pointer; 
+  height: 30px;
+  cursor: pointer;
 }
 
 .is-hidden {
