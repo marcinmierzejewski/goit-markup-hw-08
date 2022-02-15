@@ -478,6 +478,55 @@
             <use href="images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="modal-form-container">          
+          <form action="javascript:void(0);" autocomplete="off" method="post">
+            <p class="modal-form-title">Zostaw swoje dane w formularzu poniżej</p>
+
+            <label for="user-name" class="modal-label">Imię</label>
+            <div class="modal-form-items">
+              <input class="modal-input" type="text" name="username" id="user-name">
+              <div class="form-icon-div">
+                <svg class="form-icon" width="12" height="12">
+                  <use href="images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+            </div>
+
+            <label for="user-tel" class="modal-label">Telefon</label>
+            <div class="modal-form-items">
+              <input class="modal-input" type="tel" name="usertel" id="user-tel">
+              <div class="form-icon-div">
+                <svg class="form-icon" width="13" height="13">
+                  <use href="images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="modal-form-items">
+              <input class="modal-input" type="tel" name="useremail" id="user-email">
+              <div class="form-icon-div">
+                <svg class="form-icon" width="15" height="12">
+                  <use href="images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </div>
+
+            <label for="user-message" class="modal-label">Komentarz</label>
+            <div class="modal-form-message">
+              <textarea class="modal-textarea" name="usermessage" id="user-message" placeholder="Wprowadź tekst" cols="30" rows="10"></textarea>
+            </div>
+          
+            
+            
+            <label class="check-label" for="id-checkbox">
+              <input class="custom-check hidden" type="checkbox" name="checkbox" id="id-checkbox">
+              <p class="check-content">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a>.</p>       
+            </label>
+            <button class="submit-btn" type="submit">Wyślij</button>
+          </form>
+
+        </div>
       </div>
     </div>
 
