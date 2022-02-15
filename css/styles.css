@@ -577,6 +577,21 @@ BACKDROP
   border-radius: 4px;
 }
 
+.modal-form-container {
+  padding: 40px;
+}
+
+.modal-form-title {
+  font-family: var(--font-roboto);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .close-btn {
   position: absolute;
   top: 8px;
