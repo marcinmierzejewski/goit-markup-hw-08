@@ -85,6 +85,9 @@
   --val-94: 94px;
   --val-120: 120px;
   --val-200: 200px;
+
+   /* transition */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -203,7 +206,7 @@ HEADER
 .link,
 .main-logo {
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
 }
 
 .link {
@@ -223,7 +226,7 @@ HEADER
   bottom: -33px;
   left: 0;
   background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation);
 }
 
 .main-nav-link:hover::after {
@@ -436,8 +439,8 @@ INDEX
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation),
+    background-color var(--animation);
 }
 
 .social-list-item:not(:last-child) {
@@ -461,8 +464,8 @@ INDEX
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation),
+    border var(--animation);
 }
 
 .clients-icon:hover,
@@ -547,7 +550,7 @@ FOOTER
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation);
 }
 
 .footer-list-item:not(:last-child) {
@@ -573,9 +576,9 @@ BACKDROP
   height: 100vh;
   background-color: var(--color-backdrop);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--animation),
+    visibility var(--animation),
+    transform var(--animation);
 }
 
 .modal {
@@ -781,9 +784,9 @@ PORTFOLIO
   border: none;
   border-radius: 4px;
   padding: var(--val-6) var(--val-22);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--animation),
+    color var(--animation),
+    background-color var(--animation);
 }
 
 .selection-btn:hover,
@@ -808,7 +811,7 @@ PORTFOLIO
 }
 
 .gallery-list-item {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--animation);
 }
 
 .gallery-img {
@@ -832,7 +835,7 @@ PORTFOLIO
   padding-left: var(--val-24);
   padding-right: 45px;
   background: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation);
 }
 
 .gallery-list-item:hover {
