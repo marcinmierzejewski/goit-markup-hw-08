@@ -616,7 +616,8 @@ BACKDROP
 }
 
 .modal-form-items {
-  position: relative;
+  position: relative;  
+  transition: fill var(--animation);
 }
 
 .modal-input {
@@ -630,6 +631,7 @@ BACKDROP
   border-radius: var(--val-4);
   padding-left: var(--val-42);
   outline: none;
+  transition: border-color var(--animation);
 }
 
 .modal-form-items:hover,
@@ -663,6 +665,7 @@ BACKDROP
   margin-bottom: var(--val-20);  
   font-size: var(--val-12);
   outline: none;
+  transition: border-color var(--animation);
 }
 
 .modal-textarea::placeholder {
@@ -671,7 +674,6 @@ BACKDROP
   letter-spacing: var(--l-spacing-1);
   color: var(--color-placeholder);
 }
-
 
 .check-label {
   font-size: var(--font-rem-14);
@@ -690,12 +692,9 @@ BACKDROP
   background-color: transparent;
   border: var(--val-2) solid #212121;
   border-radius: var(--val-2);
-  margin-right: var(--val-7);
-  
-
+  margin-right: var(--val-7);  
+  transition: background-color var(--animation);
 }
-
-
 
 .custom-check:checked + .check-label::before {
   background-color: var(--color-decoration);
@@ -720,24 +719,6 @@ BACKDROP
   overflow: hidden;
 }
 
-/* .custom-check {
-  display: block;
-  width: var(--val-16);
-  height: var(--val-16);
-  background-color: transparent;
-  position: relative;
-  border: var(--val-2) solid #212121;
-  border-radius: var(--val-2);
-}
-
-.custom-check:checked {
-  background-color: var(--color-decoration);
-  background-image: url(../images/check.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border: none;
-} */
-
 .submit-btn {
   display: block;
   margin: 0 auto;
@@ -750,8 +731,7 @@ BACKDROP
   border-radius: var(--val-4);
   color: var(--color-light);
   padding: var(--val-10) var(--val-76);
-  border: none;
-  
+  border: none;  
   margin-top: var(--val-30);
   }
 
