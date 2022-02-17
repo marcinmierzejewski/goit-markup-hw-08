@@ -654,6 +654,7 @@ BACKDROP
 }
 
 .modal-textarea {
+  display: block;
   resize: none;
   padding: var(--val-12) var(--val-16);
   width: 100%;
@@ -671,6 +672,7 @@ BACKDROP
   color: var(--color-placeholder);
 }
 
+
 .check-label {
   font-size: var(--font-rem-14);
   line-height: var(--l-height-24);
@@ -678,7 +680,29 @@ BACKDROP
   color: var(--color-grey);
   display: flex;
   align-items: center;
-  margin-bottom: var(--val-30);
+}
+
+.check-label::before {
+  display: inline-block;
+  content: "";
+  width: var(--val-16);
+  height: var(--val-16);
+  background-color: transparent;
+  border: var(--val-2) solid #212121;
+  border-radius: var(--val-2);
+  margin-right: var(--val-7);
+  
+
+}
+
+
+
+.custom-check:checked + .check-label::before {
+  background-color: var(--color-decoration);
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
 }
 
 .check-label a {  
@@ -686,15 +710,20 @@ BACKDROP
 }
 
 .hidden {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
-.custom-check {
+/* .custom-check {
   display: block;
   width: var(--val-16);
-  height: var(--val-15);
+  height: var(--val-16);
   background-color: transparent;
   position: relative;
   border: var(--val-2) solid #212121;
@@ -707,11 +736,7 @@ BACKDROP
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: none;
-}
-
-.check-content {
-  margin-left: var(--val-7);
-}
+} */
 
 .submit-btn {
   display: block;
@@ -726,6 +751,8 @@ BACKDROP
   color: var(--color-light);
   padding: var(--val-10) var(--val-76);
   border: none;
+  
+  margin-top: var(--val-30);
   }
 
 .close-btn {
