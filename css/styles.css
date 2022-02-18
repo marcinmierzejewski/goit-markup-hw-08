@@ -532,7 +532,7 @@ FOOTER
   line-height: var(--l-height-16);
   letter-spacing: var(--l-spacing-3);
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: var(--val-12);
 }
 
 .footer-social-list {
@@ -562,6 +562,74 @@ FOOTER
   background-color: var(--color-decoration);
   border-radius: 50%;
 }
+
+.newsletter {
+  margin-left: 78px;
+  padding-top: var(--val-12);
+}
+
+.newsletter-title {
+  display: block;
+  font-weight: var(--f-weight-700);
+  font-size: var(--font-rem-14);
+  line-height: var(--l-height-16);
+  letter-spacing: var(--l-spacing-3);
+  text-transform: uppercase;
+  color: var(--color-light);
+  margin-bottom: var(--val-20);
+}
+
+.newsletter-input {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;  
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.newsletter-input:hover,
+.newsletter-input:focus {
+  border-color: var(--color-decoration);
+}
+
+.newsletter-input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-btn {
+  width: 200px;
+  background-color: var(--color-decoration);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: var(--f-weight-700);
+  font-size: var(--font-rem-16);
+  line-height: var(--l-height-30);
+  letter-spacing: var(--l-spacing-6);
+  color: var(--color-light);
+  padding: 10px 8px 10px 42px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+.newsletter-icon {
+  margin-left: 24px;
+}
+
+
 
 /*
 ============================================================
@@ -609,6 +677,7 @@ BACKDROP
 }
 
 .modal-label {
+  display: block;
   font-size: var(--font-rem-12);
   line-height: var(--l-height-14);
   letter-spacing: var(--l-spacing-1);
@@ -693,7 +762,8 @@ BACKDROP
   border: var(--val-2) solid #212121;
   border-radius: var(--val-2);
   margin-right: var(--val-7);  
-  transition: background-color var(--animation);
+  transition: background-color var(--animation),
+              border var(--animation);
 }
 
 .custom-check:checked + .check-label::before {
@@ -701,7 +771,7 @@ BACKDROP
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border: none;
+  border: var(--val-2) solid var(--color-decoration);
 }
 
 .check-label a {  
