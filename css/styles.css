@@ -570,6 +570,7 @@ FOOTER
 
 .newsletter-title {
   display: block;
+  width: max-content;
   font-weight: var(--f-weight-700);
   font-size: var(--font-rem-14);
   line-height: var(--l-height-16);
@@ -591,6 +592,7 @@ FOOTER
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  transition: border-color var(--animation);
 }
 
 .newsletter-input:hover,
@@ -678,6 +680,7 @@ BACKDROP
 
 .modal-label {
   display: block;
+  width: max-content;
   font-size: var(--font-rem-12);
   line-height: var(--l-height-14);
   letter-spacing: var(--l-spacing-1);
