@@ -99,7 +99,7 @@
   --val-120: 120px;
   --val-200: 200px;
 
-   /* transition */
+  /* transition */
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -424,7 +424,7 @@ INDEX
   letter-spacing: var(--l-spacing-3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px var(--val-4) var(--val-4)
+  border-radius: 0px 0px var(--val-4) var(--val-4);
 }
 
 .our-team-picture-caption {
@@ -452,8 +452,7 @@ INDEX
   width: var(--w44);
   height: var(--w44);
   border-radius: 50%;
-  transition: fill var(--animation),
-    background-color var(--animation);
+  transition: fill var(--animation), background-color var(--animation);
 }
 
 .social-list-item:not(:last-child) {
@@ -477,8 +476,7 @@ INDEX
   border-radius: var(--val-4);
   width: var(--w170);
   height: var(--w92);
-  transition: fill var(--animation),
-    border var(--animation);
+  transition: fill var(--animation), border var(--animation);
 }
 
 .clients-icon:hover,
@@ -598,7 +596,7 @@ FOOTER
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: var(--val-4);
-  background-color: transparent;  
+  background-color: transparent;
   padding-left: var(--val-16);
   font-size: var(--font-rem-16);
   line-height: var(--l-height-20);
@@ -644,8 +642,6 @@ FOOTER
   margin-left: var(--val-24);
 }
 
-
-
 /*
 ============================================================
 BACKDROP
@@ -659,8 +655,7 @@ BACKDROP
   height: 100vh;
   background-color: var(--color-backdrop);
   opacity: 1;
-  transition: opacity var(--animation),
-    visibility var(--animation),
+  transition: opacity var(--animation), visibility var(--animation),
     transform var(--animation);
 }
 
@@ -701,7 +696,7 @@ BACKDROP
 }
 
 .modal-form-items {
-  position: relative;  
+  position: relative;
   transition: fill var(--animation);
 }
 
@@ -745,9 +740,9 @@ BACKDROP
   resize: none;
   padding: var(--val-12) var(--val-16);
   width: 100%;
-  height: var(--val-120);  
+  height: var(--val-120);
   margin-top: var(--val-4);
-  margin-bottom: var(--val-20);  
+  margin-bottom: var(--val-20);
   font-size: var(--val-12);
   outline: none;
   transition: border-color var(--animation);
@@ -777,9 +772,8 @@ BACKDROP
   background-color: transparent;
   border: var(--val-2) solid #212121;
   border-radius: var(--val-2);
-  margin-right: var(--val-7);  
-  transition: background-color var(--animation),
-              border var(--animation);
+  margin-right: var(--val-7);
+  transition: background-color var(--animation), border var(--animation);
 }
 
 .custom-check:checked + .check-label::before {
@@ -790,7 +784,7 @@ BACKDROP
   border: var(--val-2) solid var(--color-decoration);
 }
 
-.check-label a {  
+.check-label a {
   color: var(--color-decoration);
 }
 
@@ -809,7 +803,7 @@ BACKDROP
   display: block;
   margin: 0 auto;
   font-weight: var(--f-weight-700);
-  font-size: var(--font-rem-16) ;
+  font-size: var(--font-rem-16);
   line-height: var(--l-height-30);
   letter-spacing: var(--l-spacing-6);
   background: var(--color-decoration);
@@ -817,9 +811,9 @@ BACKDROP
   border-radius: var(--val-4);
   color: var(--color-light);
   padding: var(--val-10) var(--val-76);
-  border: none;  
+  border: none;
   margin-top: var(--val-30);
-  }
+}
 
 .close-btn {
   position: absolute;
@@ -831,8 +825,7 @@ BACKDROP
   width: var(--val-30);
   height: var(--val-30);
   cursor: pointer;
-  transition: border-color var(--animation),
-              fill var(--animation);
+  transition: border-color var(--animation), fill var(--animation);
 }
 
 .close-btn:hover {
@@ -884,8 +877,7 @@ PORTFOLIO
   border: none;
   border-radius: var(--val-4);
   padding: var(--val-6) var(--val-22);
-  transition: box-shadow var(--animation),
-    color var(--animation),
+  transition: box-shadow var(--animation), color var(--animation),
     background-color var(--animation);
 }
 
