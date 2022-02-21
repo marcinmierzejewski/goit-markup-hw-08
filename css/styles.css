@@ -654,9 +654,7 @@ BACKDROP
   width: 100vw;
   height: 100vh;
   background-color: var(--color-backdrop);
-  opacity: 1;
-  transition: opacity var(--animation), visibility var(--animation),
-    transform var(--animation);
+  transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -665,12 +663,18 @@ BACKDROP
   top: 50%;
   width: var(--w528);
   min-height: var(--w581);
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   margin: 0 auto;
   background-color: var(--color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: var(--val-4);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-form-container {
@@ -834,12 +838,6 @@ BACKDROP
   fill: var(--color-decoration);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: scale(0);
-}
 
 /* 
 ============================================================
