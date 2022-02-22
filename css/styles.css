@@ -169,12 +169,12 @@ figure {
   color: var(--color-decoration);
 }
 
-.link-active {
+.link_active {
   width: 100%;
   color: var(--color-decoration);
 }
 
-.link-active::after {
+.link_active::before {
   content: "";
   width: 100%;
   height: var(--w4);
@@ -198,7 +198,7 @@ HEADER
   border-bottom: var(--val-1) solid var(--color-border-header);
 }
 
-.header .container {
+.header__container {
   display: flex;
   background-color: var(--color-light);
   align-items: center;
@@ -236,11 +236,11 @@ HEADER
   margin-left: auto;
 }
 
-.main-nav > .main-nav__list:not(:last-child) {
+.main-nav__list:not(:last-child) {
   margin-right: var(--val-46);
 }
 
-.main-contact > .main-contact__list:not(:last-child) {
+.main-contact__list:not(:last-child) {
   margin-right: var(--val-50);
 }
 
@@ -248,7 +248,7 @@ HEADER
   position: relative;
 }
 
-.main-link::after {
+.main-nav__link::after {
   content: "";
   width: 100%;
   height: var(--w4);
@@ -259,12 +259,12 @@ HEADER
   transition: background-color var(--animation);
 }
 
-.main-link:hover::after {
+.main-nav__link:hover::after {
   background-color: var(--color-decoration);
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
+.main-contact__icon:hover,
+.main-contact__icon:focus {
   fill: var(--color-decoration);
   color: var(--color-decoration);
 }
@@ -287,6 +287,7 @@ INDEX
 */
 /* ========hero======*/
 .hero {
+  display: flex;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -302,7 +303,8 @@ INDEX
   margin: 0 auto;
 }
 
-.hero-container {
+.hero__container {
+  display: flex;
   height: 37.5rem;
   justify-content: center;
   align-items: center;
@@ -318,7 +320,7 @@ INDEX
   width: var(--width-container696);
 }
 
-.hero-header-button {
+.hero-button {
   background-color: var(--color-decoration);
   font-family: inherit;
   color: var(--color-light);
