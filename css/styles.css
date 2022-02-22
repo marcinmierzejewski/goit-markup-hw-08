@@ -671,6 +671,19 @@ BACKDROP
   border-radius: var(--val-4);
 }
 
+.animation-modal {
+ animation: modal-animation var(--animation);
+}
+
+@keyframes modal-animation {
+  0% {
+  left: 40%;
+  }
+  100% {
+  left: 50%;
+  }
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
