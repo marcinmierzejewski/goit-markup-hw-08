@@ -189,6 +189,36 @@ figure {
   background-color: var(--color-decoration);
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--val-30);
+  padding-top: var(--val-16);
+}
+
+.social-list__link {
+  fill: var(--color-social);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--w44);
+  height: var(--w44);
+  border-radius: 50%;
+  transition: fill var(--animation), background-color var(--animation);
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: var(--val-10);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  fill: var(--color-light);
+  background-color: var(--color-decoration);
+  border-radius: 50%;
+}
+
 /* 
 ============================================================
 HEADER
@@ -268,19 +298,19 @@ HEADER
   background-color: var(--color-decoration);
 }
 
-.main-contact__icon:hover,
-.main-contact__icon:focus {
+.main-contact__link:hover,
+.main-contact__link:focus {
   fill: var(--color-decoration);
   color: var(--color-decoration);
 }
 
-.main-contact__icon {
+.main-contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main-contact__icon svg {
+.main-contact__icon {
   margin-right: var(--val-10);
   fill: currentColor;
 }
@@ -418,13 +448,18 @@ INDEX
 }
 
 /* ======our team====== */
-.our-team {
+.section__our-team {
+  display: flex;
   background-color: var(--color-light-grey);
   align-items: center;
   justify-content: center;
 }
 
-.our-team-picture {
+.our-team {
+  display: flex;
+}
+
+.our-team__picture {
   background-color: var(--color-light);
   text-align: center;
   font-size: var(--font-rem-16);
@@ -435,43 +470,14 @@ INDEX
   border-radius: 0px 0px var(--val-4) var(--val-4);
 }
 
-.our-team-picture-caption {
+.our-team__caption {
   font-weight: var(--f-weight-500);
   padding-top: var(--val-30);
   padding-bottom: var(--val-10);
 }
 
-.our-team-picture-content {
+.our-team__content {
   color: var(--color-grey);
-}
-
-.our-team-social-list {
-  align-items: center;
-  justify-content: center;
-  padding-bottom: var(--val-30);
-  padding-top: var(--val-16);
-}
-
-.social-list-link {
-  fill: var(--color-social);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--w44);
-  height: var(--w44);
-  border-radius: 50%;
-  transition: fill var(--animation), background-color var(--animation);
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: var(--val-10);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: var(--color-light);
-  background-color: var(--color-decoration);
-  border-radius: 50%;
 }
 
 /* ======Clients====== */
