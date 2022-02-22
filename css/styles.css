@@ -763,6 +763,7 @@ BACKDROP
   font-size: var(--val-12);
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--val-4);
   transition: border-color var(--animation);
 }
 
