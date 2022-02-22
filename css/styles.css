@@ -151,6 +151,11 @@ figure {
 }
 
 .section-title {
+  text-align: center;
+  font-size: var(--font-rem-36);
+  line-height: var(--l-height-42);
+  letter-spacing: var(--l-spacing-3);
+  font-weight: var(--f-weight-700);
   margin-bottom: var(--val-50);
 }
 
@@ -380,24 +385,21 @@ INDEX
 }
 
 /* ======what about====== */
-.what-about {
+.section__what-about {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.section-title {
-  text-align: center;
-  font-size: var(--font-rem-36);
-  line-height: var(--l-height-42);
-  letter-spacing: var(--l-spacing-3);
-  font-weight: var(--f-weight-700);
+.what-about {
+  display: flex;
 }
 
-.what-about-item {
+.what-about__item {
   position: relative;
 }
 
-.what-about-label {
+.what-about__label {
   position: absolute;
   left: 0;
   bottom: 0;
