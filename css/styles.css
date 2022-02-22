@@ -146,7 +146,7 @@ figure {
   list-style: none;
 }
 
-.list-items > li:not(:last-child) {
+.list_items > li:not(:last-child) {
   margin-right: var(--val-30);
 }
 
@@ -337,36 +337,32 @@ INDEX
 }
 
 /* ======advantage====== */
-.advantage {
+.section__advantage {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 0;
 }
 
-.list-advantage {
+.advantage {
+  display: flex;
   font-size: var(--font-rem-14);
   line-height: var(--l-height-16);
   letter-spacing: var(--l-spacing-3);
 }
 
-.list-header {
+.advantage__header {
   text-transform: uppercase;
   font-weight: var(--f-weight-700);
 }
 
-.list-contents {
+.advantage__contents {
   line-height: var(--l-height-24);
   color: var(--color-grey);
   margin-top: var(--val-10);
 }
 
-.advantage-item svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.advantage-icon-container {
+.advantage__icon-container {
   width: var(--w270);
   height: var(--w120);
   display: flex;
@@ -375,6 +371,12 @@ INDEX
   background: #f5f4fa;
   border-radius: var(--val-4);
   margin-bottom: var(--val-30);
+}
+
+.advantage__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ======what about====== */
