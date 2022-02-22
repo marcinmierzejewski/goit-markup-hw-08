@@ -654,7 +654,7 @@ BACKDROP
   width: 100vw;
   height: 100vh;
   background-color: var(--color-backdrop);
-  transition: opacity var(--animation), visibility var(--animation);
+  transition: visibility var(--animation), opacity var(--animation);
 }
 
 .modal {
@@ -663,31 +663,24 @@ BACKDROP
   top: 50%;
   width: var(--w528);
   min-height: var(--w581);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   margin: 0 auto;
   background-color: var(--color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: var(--val-4);
+  transition: transform var(--animation);
 }
 
-.animation-modal {
- animation: modal-animation var(--animation);
-}
-
-@keyframes modal-animation {
-  0% {
-  left: 40%;
-  }
-  100% {
-  left: 50%;
-  }
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none;  
+  transition: transform var(--animation), visibility var(--animation), opacity var(--animation);
 }
 
 .modal-form-container {
