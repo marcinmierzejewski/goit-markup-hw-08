@@ -883,27 +883,31 @@ PORTFOLIO
 ============================================================
 */
 /* selection */
-.selection-container {
+.container-selection {
   align-items: center;
   justify-content: center;
 }
 
-.main-container {
+.section-selection {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .selection {
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 
-.selection-list {
+.selection__list {
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--val-50);
 }
 
-.selection-btn {
+.selection__btn {
   font-family: inherit;
   color: inherit;
   background-color: var(--color-light-grey);
@@ -918,8 +922,8 @@ PORTFOLIO
     background-color var(--animation);
 }
 
-.selection-btn:hover,
-.selection-btn:focus {
+.selection__btn:hover,
+.selection__btn:focus {
   background-color: var(--color-decoration);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -927,7 +931,7 @@ PORTFOLIO
   cursor: pointer;
 }
 
-.selection-items:not(:last-child) {
+.selection__items:not(:last-child) {
   margin-right: var(--val-8);
 }
 
