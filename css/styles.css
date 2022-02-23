@@ -219,6 +219,35 @@ figure {
   border-radius: 50%;
 }
 
+
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: var(--f-weight-700);
+  font-size: var(--font-rem-16);
+  line-height: var(--l-height-30);
+  letter-spacing: var(--l-spacing-6);
+  background: var(--color-decoration);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: var(--val-4);
+  color: var(--color-light);
+  padding: var(--val-10) var(--val-76);
+  border: none;
+  margin-top: var(--val-30);
+}
+
 /* 
 ============================================================
 HEADER
@@ -684,6 +713,13 @@ BACKDROP
   transition: visibility var(--animation), opacity var(--animation);
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;  
+  transition: transform var(--animation), visibility var(--animation), opacity var(--animation);
+}
+
 .modal {
   position: absolute;
   left: 50%;
@@ -703,18 +739,29 @@ BACKDROP
   transform: translate(-50%, -50%) scale(0);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;  
-  transition: transform var(--animation), visibility var(--animation), opacity var(--animation);
+.modal__close-btn {
+  position: absolute;
+  top: var(--val-8);
+  right: var(--val-8);
+  border-radius: 50%;
+  border: var(--val-1) solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-light);
+  width: var(--val-30);
+  height: var(--val-30);
+  cursor: pointer;
+  transition: border-color var(--animation), fill var(--animation);
+}
+
+.modal__close-btn:hover {
+  border-color: var(--color-decoration);
+  fill: var(--color-decoration);
 }
 
 .modal-form-container {
   padding: var(--val-40);
 }
 
-.modal-form-title {
+.modal-form__title {
   font-weight: var(--f-weight-700);
   font-size: var(--font-rem-20);
   line-height: var(--l-height-23);
@@ -723,7 +770,7 @@ BACKDROP
   letter-spacing: var(--l-spacing-3);
 }
 
-.modal-label {
+.modal-form__label {
   display: block;
   width: max-content;
   font-size: var(--font-rem-12);
@@ -732,12 +779,12 @@ BACKDROP
   color: var(--color-grey);
 }
 
-.modal-form-items {
+.modal-form__items {
   position: relative;
   transition: fill var(--animation);
 }
 
-.modal-input {
+.modal-form__input {
   display: block;
   width: 100%;
   height: var(--val-40);
@@ -751,17 +798,17 @@ BACKDROP
   transition: border-color var(--animation);
 }
 
-.modal-form-items:hover,
-.modal-input:hover,
-.modal-form-items:focus,
-.modal-input:focus,
-.modal-textarea:hover,
-.modal-textarea:focus {
+.modal-form__items:hover,
+.modal-form__input:hover,
+.modal-form__items:focus,
+.modal-form__input:focus,
+.modal-form__textarea:hover,
+.modal-form__textarea:focus {
   border-color: var(--color-decoration);
   fill: var(--color-decoration);
 }
 
-.form-icon-div {
+.modal-form__icon-div {
   width: var(--val-18);
   height: var(--val-18);
   position: absolute;
@@ -772,7 +819,7 @@ BACKDROP
   justify-content: center;
 }
 
-.modal-textarea {
+.modal-form__textarea {
   display: block;
   resize: none;
   padding: var(--val-12) var(--val-16);
@@ -787,14 +834,14 @@ BACKDROP
   transition: border-color var(--animation);
 }
 
-.modal-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: var(--font-rem-12);
   line-height: var(--l-height-14);
   letter-spacing: var(--l-spacing-1);
   color: var(--color-placeholder);
 }
 
-.check-label {
+.modal-form__check-label {
   font-size: var(--font-rem-14);
   line-height: var(--l-height-24);
   letter-spacing: var(--l-spacing-3);
@@ -803,7 +850,7 @@ BACKDROP
   align-items: center;
 }
 
-.check-label::before {
+.modal-form__check-label::before {
   display: inline-block;
   content: "";
   width: var(--val-16);
@@ -815,7 +862,7 @@ BACKDROP
   transition: background-color var(--animation), border var(--animation);
 }
 
-.custom-check:checked + .check-label::before {
+.modal-form__check:checked + .modal-form__check-label::before {
   background-color: var(--color-decoration);
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
@@ -823,54 +870,11 @@ BACKDROP
   border: var(--val-2) solid var(--color-decoration);
 }
 
-.check-label a {
+.modal-form__check-label a {
   color: var(--color-decoration);
 }
 
-.hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
 
-.submit-btn {
-  display: block;
-  margin: 0 auto;
-  font-weight: var(--f-weight-700);
-  font-size: var(--font-rem-16);
-  line-height: var(--l-height-30);
-  letter-spacing: var(--l-spacing-6);
-  background: var(--color-decoration);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: var(--val-4);
-  color: var(--color-light);
-  padding: var(--val-10) var(--val-76);
-  border: none;
-  margin-top: var(--val-30);
-}
-
-.close-btn {
-  position: absolute;
-  top: var(--val-8);
-  right: var(--val-8);
-  border-radius: 50%;
-  border: var(--val-1) solid rgba(0, 0, 0, 0.1);
-  background-color: var(--color-light);
-  width: var(--val-30);
-  height: var(--val-30);
-  cursor: pointer;
-  transition: border-color var(--animation), fill var(--animation);
-}
-
-.close-btn:hover {
-  border-color: var(--color-decoration);
-  fill: var(--color-decoration);
-}
 
 
 /* 
