@@ -481,7 +481,17 @@ INDEX
 }
 
 /* ======Clients====== */
-.clients-icon {
+.section__clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients__link {
   fill: var(--color-social);
   display: flex;
   align-items: center;
@@ -493,15 +503,10 @@ INDEX
   transition: fill var(--animation), border var(--animation);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: var(--color-decoration);
   border: 1px solid var(--color-decoration);
-}
-
-.clients {
-  align-items: center;
-  justify-content: center;
 }
 
 /*
