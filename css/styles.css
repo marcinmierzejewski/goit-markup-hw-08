@@ -254,7 +254,7 @@ HEADER
 ============================================================
 */
 
-.section__header {
+.section-header {
   display: flex;
   text-align: center;
   align-items: center;
@@ -262,7 +262,7 @@ HEADER
   border-bottom: var(--val-1) solid var(--color-border-header);
 }
 
-.container__header {
+.container-header {
   display: flex;
   background-color: var(--color-light);
   align-items: center;
@@ -350,7 +350,7 @@ INDEX
 ============================================================
 */
 /* ========hero======*/
-.hero {
+.section-hero {
   display: flex;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -367,7 +367,7 @@ INDEX
   margin: 0 auto;
 }
 
-.hero__container {
+.container-hero {
   display: flex;
   height: 37.5rem;
   justify-content: center;
@@ -401,7 +401,7 @@ INDEX
 }
 
 /* ======advantage====== */
-.section__advantage {
+.section-advantage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,7 +444,7 @@ INDEX
 }
 
 /* ======what about====== */
-.section__what-about {
+.section-what-about {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,7 +477,7 @@ INDEX
 }
 
 /* ======our team====== */
-.section__our-team {
+.section-our-team {
   display: flex;
   background-color: var(--color-light-grey);
   align-items: center;
@@ -510,7 +510,7 @@ INDEX
 }
 
 /* ======Clients====== */
-.section__clients {
+.section-clients {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -543,7 +543,7 @@ INDEX
 FOOTER
 ============================================================
 */
-.section__footer {
+.section-footer {
   display: flex;
   background-color: var(--color-dark);
   align-items: center;
@@ -551,7 +551,7 @@ FOOTER
   padding: var(--val-60) var(--val-15);
 }
 
-.container__footer {
+.container-footer {
   display: flex;
   background-color: var(--color-dark);
   color: var(--color-light);
