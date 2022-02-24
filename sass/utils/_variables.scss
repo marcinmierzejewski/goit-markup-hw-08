@@ -1,0 +1,104 @@
+:root {
+  /* color */
+  --color-main: #212121;
+  --color-logo: #000000;
+  --color-decoration: #2196f3;
+  --color-light: #ffffff;
+  --color-dark: #2f303a;
+  --color-grey: #757575;
+  --color-light-grey: #f5f4fa;
+  --color-social: #afb1b8;
+  --color-border-header: #ececec;
+  --color-border-gallery: #eeeeee;
+  --color-label: rgba(47, 48, 58, 0.8);
+  --color-backdrop: rgba(0, 0, 0, 0.2);
+  --color-placeholder: rgba(117, 117, 117, 0.5);
+  /* font-size */
+  --font-main: 16px;
+  --font-rem-12: 0.75rem;
+  --font-rem-14: 0.875rem;
+  --font-rem-16: 1rem;
+  --font-rem-18: 1.125rem;
+  --font-rem-20: 1.25rem;
+  --font-rem-26: 1.625rem;
+  --font-rem-36: 2.25rem;
+  --font-rem-44: 2.75rem;
+  /* font-weight */
+  --f-weight-500: 500;
+  --f-weight-700: 700;
+  --f-weight-900: 900;
+  /* letter-spacing */
+  --l-spacing-1: 0.01em;
+  --l-spacing-2: 0.02em;
+  --l-spacing-3: 0.03em;
+  --l-spacing-6: 0.06em;
+  /* line-height */
+  --l-height-14: 0.875rem;
+  --l-height-16: 1rem;
+  --l-height-19: 1.1875rem;
+  --l-height-20: 1.25rem;
+  --l-height-23: 1.4375rem;
+  --l-height-24: 1.5rem;
+  --l-height-26: 1.625rem;
+  --l-height-28: 1.75rem;
+  --l-height-30: 1.875rem;
+  --l-height-31: 1.9375rem;
+  --l-height-36: 2.25rem;
+  --l-height-42: 2.625rem;
+  --l-height-60: 3.75rem;
+  /* font-family */
+  --font-roboto: "Roboto", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  /* width */
+  --width-container1200: 1200px;
+  --width-container696: 696px;
+  --max-width: 1600px;
+  --w358: 358px;
+  --w200: 200px;
+  --w44: 44px;
+  --w170: 170px;
+  --w92: 92px;
+  --w120: 120px;
+  --w270: 270px;
+  --w4: 4px;
+  --w528: 528px;
+  --w581: 581px;
+  /* value padding, margin */
+  --val--33: -33px;
+  --val-1: 1px;
+  --val-2: 2px;
+  --val-4: 4px;
+  --val-6: 6px;
+  --val-7: 7px;
+  --val-8: 8px;
+  --val-9: 9px;
+  --val-10: 10px;
+  --val-11: 11px;
+  --val-12: 12px;
+  --val-15: 15px;
+  --val-16: 16px;
+  --val-18: 18px;
+  --val-20: 20px;
+  --val-22: 22px;
+  --val-24: 24px;
+  --val-25: 25px;
+  --val-27: 27px;
+  --val-30: 30px;
+  --val-40: 40px;
+  --val-41: 41px;
+  --val-42: 42px;
+  --val-46: 46px;
+  --val-50: 50px;
+  --val-60: 60px;
+  --val-70: 70px;
+  --val-76: 76px;
+  --val-78: 78px;
+  --val-90: 90px;
+  --val-93: 93px;
+  --val-94: 94px;
+  --val-120: 120px;
+  --val-200: 200px;
+
+  /* transition */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

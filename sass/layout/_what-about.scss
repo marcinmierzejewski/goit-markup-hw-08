@@ -1,0 +1,31 @@
+.section-what-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.what-about {
+  display: flex;
+}
+
+.what-about__item {
+  position: relative;
+}
+
+.what-about__label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding-top: var(--val-27);
+  padding-bottom: var(--val-27);
+  font-weight: var(--f-weight-700);
+  font-size: var(--font-rem-14);
+  line-height: var(--l-height-16);
+  text-align: center;
+  letter-spacing: var(--l-spacing-3);
+  text-transform: uppercase;
+  color: var(--color-light);
+  background-color: var(--color-label);
+}

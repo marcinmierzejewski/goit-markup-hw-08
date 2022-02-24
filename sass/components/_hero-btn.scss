@@ -1,0 +1,15 @@
+.hero-button {
+  background-color: var(--color-decoration);
+  font-family: inherit;
+  color: var(--color-light);
+  font-size: var(--font-rem-16);
+  font-weight: var(--f-weight-700);
+  line-height: var(--l-height-30);
+  letter-spacing: var(--l-spacing-6);
+  cursor: pointer;
+  box-shadow: 0 4px 4px #00000026;
+  border: none;
+  padding: var(--val-10) var(--val-41) var(--val-10) var(--val-42);
+  margin-top: var(--val-30);
+  border-radius: var(--val-4);
+}

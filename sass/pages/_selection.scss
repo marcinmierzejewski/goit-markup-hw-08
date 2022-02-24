@@ -1,0 +1,51 @@
+.container-selection {
+  align-items: center;
+  justify-content: center;
+}
+
+.section-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.selection__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--val-50);
+}
+
+.selection__btn {
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--color-light-grey);
+  font-size: var(--font-rem-16);
+  line-height: var(--l-height-26);
+  letter-spacing: var(--l-spacing-3);
+  font-weight: var(--f-weight-500);
+  border: none;
+  border-radius: var(--val-4);
+  padding: var(--val-6) var(--val-22);
+  transition: box-shadow var(--animation), color var(--animation),
+    background-color var(--animation);
+}
+
+.selection__btn:hover,
+.selection__btn:focus {
+  background-color: var(--color-decoration);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.selection__items:not(:last-child) {
+  margin-right: var(--val-8);
+}
