@@ -15,15 +15,16 @@
   height: var(--w44);
   border-radius: 50%;
   transition: fill var(--animation), background-color var(--animation);
+    &:hover,
+    &:focus {
+    fill: var(--color-light);
+    background-color: var(--color-decoration);
+    border-radius: 50%;
+  }
 }
 
-.social-list__item:not(:last-child) {
-  margin-right: var(--val-10);
-}
-
-.social-list__link:hover,
-.social-list__link:focus {
-  fill: var(--color-light);
-  background-color: var(--color-decoration);
-  border-radius: 50%;
+.social-list__item { 
+  &:not(:last-child) {
+    margin-right: var(--val-10);
+  }
 }
