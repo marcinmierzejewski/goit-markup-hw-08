@@ -28,43 +28,47 @@
   margin-left: auto;
 }
 
-.main-nav__list:not(:last-child) {
-  margin-right: var(--val-46);
+.main-nav__list {
+  &:not(:last-child) {
+    margin-right: var(--val-46);
+  }
 }
 
-.main-contact__list:not(:last-child) {
-  margin-right: var(--val-50);
+.main-contact__list {
+  &:not(:last-child) {
+    margin-right: var(--val-50);
+  }
 }
 
 .main-nav__list {
   position: relative;
 }
 
-.main-nav__link::after {
-  content: "";
-  width: 100%;
-  height: var(--w4);
-  position: absolute;
-  bottom: var(--val--33);
-  left: 0;
-  background-color: transparent;
-  transition: background-color var(--animation);
-}
-
-.main-nav__link:hover::after {
-  background-color: var(--color-decoration);
-}
-
-.main-contact__link:hover,
-.main-contact__link:focus {
-  fill: var(--color-decoration);
-  color: var(--color-decoration);
+.main-nav__link {
+  &::after {
+    content: "";
+    width: 100%;
+    height: var(--w4);
+    position: absolute;
+    bottom: var(--val--33);
+    left: 0;
+    background-color: transparent;
+    transition: background-color var(--animation);
+  }
+  &:hover::after {
+    background-color: var(--color-decoration);
+  }
 }
 
 .main-contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
+    &:hover,
+    &:focus {
+      fill: var(--color-decoration);
+      color: var(--color-decoration);
+  }
 }
 
 .main-contact__icon {

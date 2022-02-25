@@ -18,10 +18,9 @@
   width: var(--w170);
   height: var(--w92);
   transition: fill var(--animation), border var(--animation);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  fill: var(--color-decoration);
-  border: 1px solid var(--color-decoration);
+    &:hover,
+    &:focus {
+      fill: var(--color-decoration);
+      border: 1px solid var(--color-decoration);
+    }
 }

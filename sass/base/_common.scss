@@ -25,35 +25,36 @@ figure {
 
 .list {
   list-style: none;
-}
 
-.list_items > li:not(:last-child) {
-  margin-right: var(--val-30);
+  &_items > li {
+    &:not(:last-child) {
+      margin-right: var(--val-30);
+    }
+  }
 }
 
 .link {
   text-decoration: none;
   transition: color var(--animation);
   color: inherit;
-    &:hover,
-    &:focus {
+
+  &:hover,
+  &:focus {
     color: var(--color-decoration);
   }
-}
 
+  &_active {
+    width: 100%;
+    color: var(--color-decoration);
 
-
-.link_active {
-  width: 100%;
-  color: var(--color-decoration);
-}
-
-.link_active::before {
-  content: "";
-  width: 100%;
-  height: var(--w4);
-  position: absolute;
-  bottom: var(--val--33);
-  left: 0;
-  background-color: var(--color-decoration);
+    &::before {
+      content: "";
+      width: 100%;
+      height: var(--w4);
+      position: absolute;
+      bottom: var(--val--33);
+      left: 0;
+      background-color: var(--color-decoration);
+    }
+  }
 }

@@ -7,7 +7,15 @@
 }
 
 .gallery__item {
-  transition: box-shadow var(--animation);
+  transition: box-shadow var(--animation);  
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+          & .gallery__overlay {
+          transform: translateY(0);
+      }
+  }
 }
 
 .gallery__img {
@@ -34,15 +42,6 @@
   transition: transform var(--animation);
 }
 
-.gallery__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
-
-.gallery__item:hover .gallery__overlay {
-  transform: translateY(0);
-}
 
 .gallery__picture-caption {
   font-size: var(--font-rem-18);
