@@ -1,32 +1,23 @@
 .container {
   width: $width-container1200;
   padding: 0 $val-15;
-}
 
-.container-header {
-  display: flex;
-  background-color: $color-light;
-  align-items: center;
-}
+  &_header {
+    display: flex;    
+    align-items: center;
+    background-color: $color-light;
+  }
 
-.container-hero {
-  display: flex;
-  height: 37.5rem;
-  justify-content: center;
-  align-items: center;
-}
+  &_hero {
+    display: flex;
+    height: 37.5rem;
+    justify-content: center;
+    align-items: center;
+  }
 
-.container-footer {
-  display: flex;
-  background-color: $color-dark;
-  color: $color-light;
-}
-
-.modal-form-container {
-  padding: $val-40;
-}
-
-.container-selection {
-  align-items: center;
-  justify-content: center;
+  &_footer {
+    display: flex;
+    background-color: $color-dark;
+    color: $color-light;
+  }
 }

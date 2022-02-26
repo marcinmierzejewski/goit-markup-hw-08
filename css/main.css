@@ -79,22 +79,21 @@ figure {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section-header {
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.section_header {
+  padding: 0;
+  text-align: center;
   border-bottom: 1px solid #ececec;
 }
 
-.section-hero {
-  display: flex;
+.section_hero {
+  padding: 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-background.jpg");
   text-align: center;
-  align-items: center;
-  justify-content: center;
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: cover;
@@ -102,44 +101,17 @@ figure {
   margin: 0 auto;
 }
 
-.section-advantage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.section_advantage {
   padding-bottom: 0;
 }
 
-.section-what-about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-our-team {
-  display: flex;
+.section_our-team {
   background-color: #f5f4fa;
-  align-items: center;
-  justify-content: center;
 }
 
-.section-clients {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-footer {
-  display: flex;
+.section_footer {
   background-color: #2f303a;
-  align-items: center;
-  justify-content: center;
   padding: 60px 15px;
-}
-
-.section-selection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {
@@ -147,32 +119,23 @@ figure {
   padding: 0 15px;
 }
 
-.container-header {
+.container_header {
   display: flex;
-  background-color: #ffffff;
   align-items: center;
+  background-color: #ffffff;
 }
 
-.container-hero {
+.container_hero {
   display: flex;
   height: 37.5rem;
   justify-content: center;
   align-items: center;
 }
 
-.container-footer {
+.container_footer {
   display: flex;
   background-color: #2f303a;
   color: #ffffff;
-}
-
-.modal-form-container {
-  padding: 40px;
-}
-
-.container-selection {
-  align-items: center;
-  justify-content: center;
 }
 
 .backdrop {
@@ -190,6 +153,10 @@ figure {
   visibility: hidden;
   pointer-events: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-container {
+  padding: 40px;
 }
 
 .modal {
