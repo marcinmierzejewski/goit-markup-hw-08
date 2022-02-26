@@ -1,11 +1,11 @@
 .container {
-  width: var(--width-container1200);
-  padding: 0 var(--val-15);
+  width: $width-container1200;
+  padding: 0 $val-15;
 }
 
 .container-header {
   display: flex;
-  background-color: var(--color-light);
+  background-color: $color-light;
   align-items: center;
 }
 
@@ -18,12 +18,12 @@
 
 .container-footer {
   display: flex;
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background-color: $color-dark;
+  color: $color-light;
 }
 
 .modal-form-container {
-  padding: var(--val-40);
+  padding: $val-40;
 }
 
 .container-selection {

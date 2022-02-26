@@ -2,23 +2,23 @@
   display: flex;
 
   &__picture {
-    background-color: var(--color-light);
+    background-color: $color-light;
     text-align: center;
-    font-size: var(--font-rem-16);
-    line-height: var(--l-height-19);
-    letter-spacing: var(--l-spacing-3);
+    font-size: $font-rem-16;
+    line-height: $l-height-19;
+    letter-spacing: $l-spacing-3;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px var(--val-4) var(--val-4);
+    border-radius: 0px 0px $val-4 $val-4;
   }
 
   &__caption {
-    font-weight: var(--f-weight-500);
-    padding-top: var(--val-30);
-    padding-bottom: var(--val-10);
+    font-weight: $f-weight-500;
+    padding-top: $val-30;
+    padding-bottom: $val-10;
   }
 
   &__content {
-    color: var(--color-grey);
+    color: $color-grey;
   }
 }

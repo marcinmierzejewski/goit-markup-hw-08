@@ -1,9 +1,9 @@
 .footer {
-  font-size: var(--font-rem-14);
-  line-height: var(--l-height-24);
-  letter-spacing: var(--l-spacing-3);
+  font-size: $font-rem-14;
+  line-height: $l-height-24;
+  letter-spacing: $l-spacing-3;
   font-style: normal;
-  margin-top: var(--val-20);
+  margin-top: $val-20;
   
   &__link {
     color: rgba(255, 255, 255, 0.6);
@@ -11,70 +11,70 @@
 
   &__item {  
     &:not(:last-child) {
-      margin-bottom: var(--val-9);
+      margin-bottom: $val-9;
     }
   }
 }
 
 .footer-right-side {
-  margin-left: var(--val-70);
+  margin-left: $val-70;
 }
 
 .footer-title {
   display: block;
-  font-weight: var(--f-weight-700);
-  font-size: var(--font-rem-14);
-  line-height: var(--l-height-16);
-  letter-spacing: var(--l-spacing-3);
+  font-weight: $f-weight-700;
+  font-size: $font-rem-14;
+  line-height: $l-height-16;
+  letter-spacing: $l-spacing-3;
   text-transform: uppercase;
-  padding-top: var(--val-12);
+  padding-top: $val-12;
 }
 
 .social-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: var(--val-20);
+  padding-top: $val-20;
 
   &__link {
-    fill: var(--color-light);
+    fill: $color-light;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    width: var(--w44);
-    height: var(--w44);
-    transition: background-color var(--animation);
+    width: $w44;
+    height: $w44;
+    transition: background-color $animation;
 
       &:hover,
       &:focus {
-      background-color: var(--color-decoration);
+      background-color: $color-decoration;
       border-radius: 50%;
     }
   }
   
   &__item {  
     &:not(:last-child) {
-      margin-right: var(--val-10);
+      margin-right: $val-10;
     }
   }
 }
 
 .newsletter {
-  margin-left: var(--val-78);
-  padding-top: var(--val-12);
+  margin-left: $val-78;
+  padding-top: $val-12;
 
   &__title {
     display: block;
     width: max-content;
-    font-weight: var(--f-weight-700);
-    font-size: var(--font-rem-14);
-    line-height: var(--l-height-16);
-    letter-spacing: var(--l-spacing-3);
+    font-weight: $f-weight-700;
+    font-size: $font-rem-14;
+    line-height: $l-height-16;
+    letter-spacing: $l-spacing-3;
     text-transform: uppercase;
-    color: var(--color-light);
-    margin-bottom: var(--val-20);
+    color: $color-light;
+    margin-bottom: $val-20;
   }
   
   &__input-wrapper {
@@ -82,27 +82,27 @@
   }
   
   &__input {
-    width: var(--w358);
+    width: $w358;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: var(--val-4);
+    border-radius: $val-4;
     background-color: transparent;
-    padding-left: var(--val-16);
-    font-size: var(--font-rem-16);
-    line-height: var(--l-height-20);
-    letter-spacing: var(--l-spacing-3);
+    padding-left: $val-16;
+    font-size: $font-rem-16;
+    line-height: $l-height-20;
+    letter-spacing: $l-spacing-3;
     color: rgba(255, 255, 255, 0.6);
     outline: none;
-    transition: border-color var(--animation);  
+    transition: border-color $animation;  
 
       &:hover,
       &:focus {
-        border-color: var(--color-decoration);
+        border-color: $color-decoration;
     }
       &::placeholder {
-        font-size: var(--font-rem-16);
-        line-height: var(--l-height-20);
-        letter-spacing: var(--l-spacing-3);
+        font-size: $font-rem-16;
+        line-height: $l-height-20;
+        letter-spacing: $l-spacing-3;
         color: rgba(255, 255, 255, 0.6);
         display: flex;
         align-items: center;
@@ -110,24 +110,24 @@
   }
   
   &__btn {
-    width: var(--w200);
-    background-color: var(--color-decoration);
+    width: $w200;
+    background-color: $color-decoration;
     display: flex;
     align-items: center;
     text-align: center;
-    font-weight: var(--f-weight-700);
-    font-size: var(--font-rem-16);
-    line-height: var(--l-height-30);
-    letter-spacing: var(--l-spacing-6);
-    color: var(--color-light);
-    padding: var(--val-10) var(--val-8) var(--val-10) var(--val-42);
+    font-weight: $f-weight-700;
+    font-size: $font-rem-16;
+    line-height: $l-height-30;
+    letter-spacing: $l-spacing-6;
+    color: $color-light;
+    padding: $val-10 $val-8 $val-10 $val-42;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: var(--val-4);
-    margin-left: var(--val-12);
+    border-radius: $val-4;
+    margin-left: $val-12;
   }
   
   &__icon {
-    margin-left: var(--val-24);
+    margin-left: $val-24;
   }
 }

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: var(--val-30);
+  gap: $val-30;
 
   &__img {
     position: relative;
@@ -17,42 +17,42 @@
     top: 0;
     display: block;
     width: 100%;
-    font-size: var(--font-rem-18);
-    line-height: var(--l-height-28);
-    letter-spacing: var(--l-spacing-3);
-    color: var(--color-light);
+    font-size: $font-rem-18;
+    line-height: $l-height-28;
+    letter-spacing: $l-spacing-3;
+    color: $color-light;
     padding-top: 49px;
     padding-bottom: 49px;
-    padding-left: var(--val-24);
+    padding-left: $val-24;
     padding-right: 45px;
     background: rgba(33, 150, 243, 0.9);
-    transition: transform var(--animation);
+    transition: transform $animation;
   }  
   
   &__picture-caption {
-    font-size: var(--font-rem-18);
-    line-height: var(--l-height-36);
-    letter-spacing: var(--l-spacing-6);
-    font-weight: var(--f-weight-700);
-    padding-bottom: var(--val-4);
+    font-size: $font-rem-18;
+    line-height: $l-height-36;
+    letter-spacing: $l-spacing-6;
+    font-weight: $f-weight-700;
+    padding-bottom: $val-4;
   }
   
   &__picture-content {
-    line-height: var(--l-height-30);
-    letter-spacing: var(--l-spacing-3);
-    color: var(--color-grey);
+    line-height: $l-height-30;
+    letter-spacing: $l-spacing-3;
+    color: $color-grey;
   }
   
   &__figcaption {
-    padding: var(--val-20) var(--val-24);
-    border-bottom: 1px solid var(--color-border-gallery);
-    border-left: 1px solid var(--color-border-gallery);
-    border-right: 1px solid var(--color-border-gallery);
+    padding: $val-20 $val-24;
+    border-bottom: 1px solid $color-border-gallery;
+    border-left: 1px solid $color-border-gallery;
+    border-right: 1px solid $color-border-gallery;
   }
 }
 
 .gallery__item {
-  transition: box-shadow var(--animation);  
+  transition: box-shadow $animation;  
     &:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);

@@ -2,15 +2,15 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: var(--w528);
-  min-height: var(--w581);
+  width: $w528;
+  min-height: $w581;
   transform: translate(-50%, -50%) scale(1);
   margin: 0 auto;
-  background-color: var(--color-light);
+  background-color: $color-light;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: var(--val-4);
-  transition: transform var(--animation);
+  border-radius: $val-4;
+  transition: transform $animation;
 
   .is-hidden & {
     transform: translate(-50%, -50%) scale(0);
@@ -18,79 +18,79 @@
 
   &__close-btn {
     position: absolute;
-    top: var(--val-8);
-    right: var(--val-8);
+    top: $val-8;
+    right: $val-8;
     border-radius: 50%;
-    border: var(--val-1) solid rgba(0, 0, 0, 0.1);
-    background-color: var(--color-light);
-    width: var(--val-30);
-    height: var(--val-30);
+    border: $val-1 solid rgba(0, 0, 0, 0.1);
+    background-color: $color-light;
+    width: $val-30;
+    height: $val-30;
     cursor: pointer;
-    transition: border-color var(--animation), fill var(--animation);
+    transition: border-color $animation, fill $animation;
   
     &:hover {
-      border-color: var(--color-decoration);
-      fill: var(--color-decoration);
+      border-color: $color-decoration;
+      fill: $color-decoration;
     }
   }
 }
 
 .modal-form {
   &__title {
-    font-weight: var(--f-weight-700);
-    font-size: var(--font-rem-20);
-    line-height: var(--l-height-23);
-    margin-bottom: var(--val-12);
+    font-weight: $f-weight-700;
+    font-size: $font-rem-20;
+    line-height: $l-height-23;
+    margin-bottom: $val-12;
     text-align: center;
-    letter-spacing: var(--l-spacing-3);
+    letter-spacing: $l-spacing-3;
   }
   
   &__label {
     display: block;
     width: max-content;
-    font-size: var(--font-rem-12);
-    line-height: var(--l-height-14);
-    letter-spacing: var(--l-spacing-1);
-    color: var(--color-grey);
+    font-size: $font-rem-12;
+    line-height: $l-height-14;
+    letter-spacing: $l-spacing-1;
+    color: $color-grey;
   }
   
   &__items {
     position: relative;  
-    transition: fill var(--animation);
+    transition: fill $animation;
 
     &:hover,
     &:focus {
-      border-color: var(--color-decoration);
-      fill: var(--color-decoration);
+      border-color: $color-decoration;
+      fill: $color-decoration;
     }
   }
   
   &__input {
     display: block;
     width: 100%;
-    height: var(--val-40);
-    margin-top: var(--val-4);
-    margin-bottom: var(--val-10);
+    height: $val-40;
+    margin-top: $val-4;
+    margin-bottom: $val-10;
     padding: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: var(--val-4);
-    padding-left: var(--val-42);
+    border-radius: $val-4;
+    padding-left: $val-42;
     outline: none;
-    transition: border-color var(--animation);
+    transition: border-color $animation;
   
     &:hover,
     &:focus {
-      border-color: var(--color-decoration);
-      fill: var(--color-decoration);
+      border-color: $color-decoration;
+      fill: $color-decoration;
     }
   }
   
   &__icon-div {
-    width: var(--val-18);
-    height: var(--val-18);
+    width: $val-18;
+    height: $val-18;
     position: absolute;
-    top: var(--val-11);
-    left: var(--val-12);
+    top: $val-11;
+    left: $val-12;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,63 +99,63 @@
   &__textarea {
     display: block;
     resize: none;
-    padding: var(--val-12) var(--val-16);
+    padding: $val-12 $val-16;
     width: 100%;
-    height: var(--val-120);
-    margin-top: var(--val-4);
-    margin-bottom: var(--val-20);
-    font-size: var(--val-12);
+    height: $val-120;
+    margin-top: $val-4;
+    margin-bottom: $val-20;
+    font-size: $val-12;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: var(--val-4);
-    transition: border-color var(--animation);
+    border-radius: $val-4;
+    transition: border-color $animation;
   
     &:hover,
     &:focus {
-      border-color: var(--color-decoration);
-      fill: var(--color-decoration);
+      border-color: $color-decoration;
+      fill: $color-decoration;
     }
   
     &::placeholder {
-      font-size: var(--font-rem-12);
-      line-height: var(--l-height-14);
-      letter-spacing: var(--l-spacing-1);
-      color: var(--color-placeholder);
+      font-size: $font-rem-12;
+      line-height: $l-height-14;
+      letter-spacing: $l-spacing-1;
+      color: $color-placeholder;
     }
   }
   
   &__check-label {
-    font-size: var(--font-rem-14);
-    line-height: var(--l-height-24);
-    letter-spacing: var(--l-spacing-3);
-    color: var(--color-grey);
+    font-size: $font-rem-14;
+    line-height: $l-height-24;
+    letter-spacing: $l-spacing-3;
+    color: $color-grey;
     display: flex;
     align-items: center;
   
     &::before {
       display: inline-block;
       content: "";
-      width: var(--val-16);
-      height: var(--val-16);
+      width: $val-16;
+      height: $val-16;
       background-color: transparent;
-      border: var(--val-2) solid #212121;
-      border-radius: var(--val-2);
-      margin-right: var(--val-7);
-      transition: background-color var(--animation), border var(--animation);
+      border: $val-2 solid #212121;
+      border-radius: $val-2;
+      margin-right: $val-7;
+      transition: background-color $animation, border $animation;
     }
   
     & a {
-      color: var(--color-decoration);
+      color: $color-decoration;
     }
   }
   
   &__check {
     &:checked + .modal-form__check-label::before {
-      background-color: var(--color-decoration);
+      background-color: $color-decoration;
       background-image: url(../images/check.svg);
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      border: var(--val-2) solid var(--color-decoration);
+      border: $val-2 solid $color-decoration;
     }
   }
 }

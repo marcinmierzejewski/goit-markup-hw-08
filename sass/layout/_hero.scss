@@ -1,9 +1,9 @@
 .hero-header {
-  font-size: var(--font-rem-44);
-  line-height: var(--l-height-60);
-  font-weight: var(--f-weight-900);
-  color: var(--color-light);
-  letter-spacing: var(--l-spacing-6);
+  font-size: $font-rem-44;
+  line-height: $l-height-60;
+  font-weight: $f-weight-900;
+  color: $color-light;
+  letter-spacing: $l-spacing-6;
   text-transform: uppercase;
-  width: var(--width-container696);
+  width: $width-container696;
 }

@@ -4,13 +4,13 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-backdrop);
-  transition: visibility var(--animation), opacity var(--animation);
+  background-color: $color-backdrop;
+  transition: visibility $animation, opacity $animation;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;  
-  transition: transform var(--animation), visibility var(--animation), opacity var(--animation);
+  transition: transform $animation, visibility $animation, opacity $animation;
 }

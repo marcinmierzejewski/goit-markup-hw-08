@@ -1,6 +1,6 @@
 .section {
-  padding-top: var(--val-94);
-  padding-bottom: var(--val-94);
+  padding-top: $val-94;
+  padding-bottom: $val-94;
 }
 
 .section-header {
@@ -8,7 +8,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  border-bottom: var(--val-1) solid var(--color-border-header);
+  border-bottom: $val-1 solid $color-border-header;
 }
 
 .section-hero {
@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: cover;
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@
 
 .section-our-team {
   display: flex;
-  background-color: var(--color-light-grey);
+  background-color: $color-light-grey;
   align-items: center;
   justify-content: center;
 }
@@ -56,10 +56,10 @@
 
 .section-footer {
   display: flex;
-  background-color: var(--color-dark);
+  background-color: $color-dark;
   align-items: center;
   justify-content: center;
-  padding: var(--val-60) var(--val-15);
+  padding: $val-60 $val-15;
 }
 
 .section-selection {

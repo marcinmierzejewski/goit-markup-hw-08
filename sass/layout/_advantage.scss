@@ -1,29 +1,29 @@
 .advantage {
   display: flex;
-  font-size: var(--font-rem-14);
-  line-height: var(--l-height-16);
-  letter-spacing: var(--l-spacing-3);
+  font-size: $font-rem-14;
+  line-height: $l-height-16;
+  letter-spacing: $l-spacing-3;
 
   &__header {
     text-transform: uppercase;
-    font-weight: var(--f-weight-700);
+    font-weight: $f-weight-700;
   }
 
   &__contents {
-    line-height: var(--l-height-24);
-    color: var(--color-grey);
-    margin-top: var(--val-10);
+    line-height: $l-height-24;
+    color: $color-grey;
+    margin-top: $val-10;
   }
 
   &__icon-container {
-    width: var(--w270);
-    height: var(--w120);
+    width: $w270;
+    height: $w120;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #f5f4fa;
-    border-radius: var(--val-4);
-    margin-bottom: var(--val-30);
+    border-radius: $val-4;
+    margin-bottom: $val-30;
   }
 
   &__icon {

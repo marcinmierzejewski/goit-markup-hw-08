@@ -11,15 +11,15 @@
     bottom: 0;
     display: block;
     width: 100%;
-    padding-top: var(--val-27);
-    padding-bottom: var(--val-27);
-    font-weight: var(--f-weight-700);
-    font-size: var(--font-rem-14);
-    line-height: var(--l-height-16);
+    padding-top: $val-27;
+    padding-bottom: $val-27;
+    font-weight: $f-weight-700;
+    font-size: $font-rem-14;
+    line-height: $l-height-16;
     text-align: center;
-    letter-spacing: var(--l-spacing-3);
+    letter-spacing: $l-spacing-3;
     text-transform: uppercase;
-    color: var(--color-light);
-    background-color: var(--color-label);
+    color: $color-light;
+    background-color: $color-label;
   }
 }

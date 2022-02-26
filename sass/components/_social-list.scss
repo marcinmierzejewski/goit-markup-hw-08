@@ -2,28 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: var(--val-30);
-  padding-top: var(--val-16);
+  padding-bottom: $val-30;
+  padding-top: $val-16;
   &__link {
-    fill: var(--color-social);
+    fill: $color-social;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--w44);
-    height: var(--w44);
+    width: $w44;
+    height: $w44;
     border-radius: 50%;
-    transition: fill var(--animation), background-color var(--animation);
+    transition: fill $animation, background-color $animation;
       &:hover,
       &:focus {
-      fill: var(--color-light);
-      background-color: var(--color-decoration);
+      fill: $color-light;
+      background-color: $color-decoration;
       border-radius: 50%;
     }
   }
   
   &__item { 
     &:not(:last-child) {
-      margin-right: var(--val-10);
+      margin-right: $val-10;
     }
   }
 }

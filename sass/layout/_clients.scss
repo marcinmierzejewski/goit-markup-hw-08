@@ -2,20 +2,20 @@
   display: flex;
   
   &__link {
-    fill: var(--color-social);
+    fill: $color-social;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: var(--val-1) solid #afb1b8;
-    border-radius: var(--val-4);
-    width: var(--w170);
-    height: var(--w92);
-    transition: fill var(--animation), border var(--animation);
+    border: $val-1 solid #afb1b8;
+    border-radius: $val-4;
+    width: $w170;
+    height: $w92;
+    transition: fill $animation, border $animation;
     
       &:hover,
       &:focus {
-        fill: var(--color-decoration);
-        border: 1px solid var(--color-decoration);
+        fill: $color-decoration;
+        border: 1px solid $color-decoration;
     }
   }
 }
