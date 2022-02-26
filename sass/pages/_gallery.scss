@@ -4,6 +4,51 @@
   align-items: center;
   justify-content: center;
   gap: var(--val-30);
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  &__overlay {
+    position: absolute;
+    transform: translateY(100%);
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    font-size: var(--font-rem-18);
+    line-height: var(--l-height-28);
+    letter-spacing: var(--l-spacing-3);
+    color: var(--color-light);
+    padding-top: 49px;
+    padding-bottom: 49px;
+    padding-left: var(--val-24);
+    padding-right: 45px;
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform var(--animation);
+  }  
+  
+  &__picture-caption {
+    font-size: var(--font-rem-18);
+    line-height: var(--l-height-36);
+    letter-spacing: var(--l-spacing-6);
+    font-weight: var(--f-weight-700);
+    padding-bottom: var(--val-4);
+  }
+  
+  &__picture-content {
+    line-height: var(--l-height-30);
+    letter-spacing: var(--l-spacing-3);
+    color: var(--color-grey);
+  }
+  
+  &__figcaption {
+    padding: var(--val-20) var(--val-24);
+    border-bottom: 1px solid var(--color-border-gallery);
+    border-left: 1px solid var(--color-border-gallery);
+    border-right: 1px solid var(--color-border-gallery);
+  }
 }
 
 .gallery__item {
@@ -18,48 +63,4 @@
   }
 }
 
-.gallery__img {
-  position: relative;
-  overflow: hidden;
-}
 
-.gallery__overlay {
-  position: absolute;
-  transform: translateY(100%);
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  font-size: var(--font-rem-18);
-  line-height: var(--l-height-28);
-  letter-spacing: var(--l-spacing-3);
-  color: var(--color-light);
-  padding-top: 49px;
-  padding-bottom: 49px;
-  padding-left: var(--val-24);
-  padding-right: 45px;
-  background: rgba(33, 150, 243, 0.9);
-  transition: transform var(--animation);
-}
-
-
-.gallery__picture-caption {
-  font-size: var(--font-rem-18);
-  line-height: var(--l-height-36);
-  letter-spacing: var(--l-spacing-6);
-  font-weight: var(--f-weight-700);
-  padding-bottom: var(--val-4);
-}
-
-.gallery__picture-content {
-  line-height: var(--l-height-30);
-  letter-spacing: var(--l-spacing-3);
-  color: var(--color-grey);
-}
-
-.gallery__figcaption {
-  padding: var(--val-20) var(--val-24);
-  border-bottom: 1px solid var(--color-border-gallery);
-  border-left: 1px solid var(--color-border-gallery);
-  border-right: 1px solid var(--color-border-gallery);
-}

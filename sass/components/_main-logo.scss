@@ -10,8 +10,12 @@
   margin-right: var(--val-93);
   text-decoration: none;
   transition: color var(--animation);
-}
 
-.main-logo_decoration {
-  color: var(--color-decoration);
+  &_decoration {
+    color: var(--color-decoration);
+  }
+
+  &_footer {
+    color: inherit;
+  }
 }

@@ -2,3 +2,68 @@
   padding-top: var(--val-94);
   padding-bottom: var(--val-94);
 }
+
+.section-header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--val-1) solid var(--color-border-header);
+}
+
+.section-hero {
+  display: flex;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/index/header-background.jpg");
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: cover;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-advantage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.section-what-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-our-team {
+  display: flex;
+  background-color: var(--color-light-grey);
+  align-items: center;
+  justify-content: center;
+}
+
+.section-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-footer {
+  display: flex;
+  background-color: var(--color-dark);
+  align-items: center;
+  justify-content: center;
+  padding: var(--val-60) var(--val-15);
+}
+
+.section-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
