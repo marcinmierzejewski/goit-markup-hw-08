@@ -9,7 +9,7 @@
     justify-content: center;
     margin-bottom: $val-50;
   }
-  
+
   &__btn {
     font-family: inherit;
     color: inherit;
@@ -22,20 +22,21 @@
     border-radius: $val-4;
     padding: $val-6 $val-22;
     transition: box-shadow $animation, color $animation,
-                background-color $animation;
-      &:hover,
-      &:focus {
-        background-color: $color-decoration;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-          0px 2px 2px rgba(0, 0, 0, 0.12);
-        color: $color-light;
-        cursor: pointer;
+      background-color $animation;
+      
+    &:hover,
+    &:focus {
+      background-color: $color-decoration;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      color: $color-light;
+      cursor: pointer;
     }
   }
-  
+
   &__items {
     &:not(:last-child) {
       margin-right: $val-8;
-    }  
+    }
   }
 }

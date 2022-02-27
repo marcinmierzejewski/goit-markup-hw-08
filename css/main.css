@@ -155,10 +155,6 @@ figure {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-container {
-  padding: 40px;
-}
-
 .modal {
   position: absolute;
   left: 50%;
@@ -175,6 +171,10 @@ figure {
 
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+
+.modal__form-wrapper {
+  padding: 40px;
 }
 
 .modal__close-btn {

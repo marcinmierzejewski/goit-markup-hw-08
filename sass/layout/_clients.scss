@@ -1,6 +1,6 @@
 .clients {
   display: flex;
-  
+
   &__link {
     fill: $color-social;
     display: flex;
@@ -11,11 +11,11 @@
     width: $w170;
     height: $w92;
     transition: fill $animation, border $animation;
-    
-      &:hover,
-      &:focus {
-        fill: $color-decoration;
-        border: 1px solid $color-decoration;
+
+    &:hover,
+    &:focus {
+      fill: $color-decoration;
+      border: 1px solid $color-decoration;
     }
   }
 }

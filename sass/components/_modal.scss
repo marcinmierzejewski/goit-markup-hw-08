@@ -1,7 +1,3 @@
-.modal-form-container {
-  padding: $val-40;
-}
-
 .modal {
   position: absolute;
   left: 50%;
@@ -20,6 +16,10 @@
     transform: translate(-50%, -50%) scale(0);
   }
 
+  &__form-wrapper {
+    padding: $val-40;
+  }
+
   &__close-btn {
     position: absolute;
     top: $val-8;
@@ -31,7 +31,7 @@
     height: $val-30;
     cursor: pointer;
     transition: border-color $animation, fill $animation;
-  
+
     &:hover {
       border-color: $color-decoration;
       fill: $color-decoration;
@@ -48,7 +48,7 @@
     text-align: center;
     letter-spacing: $l-spacing-3;
   }
-  
+
   &__label {
     display: block;
     width: max-content;
@@ -57,9 +57,9 @@
     letter-spacing: $l-spacing-1;
     color: $color-grey;
   }
-  
+
   &__items {
-    position: relative;  
+    position: relative;
     transition: fill $animation;
 
     &:hover,
@@ -68,7 +68,7 @@
       fill: $color-decoration;
     }
   }
-  
+
   &__input {
     display: block;
     width: 100%;
@@ -81,14 +81,14 @@
     padding-left: $val-42;
     outline: none;
     transition: border-color $animation;
-  
+
     &:hover,
     &:focus {
       border-color: $color-decoration;
       fill: $color-decoration;
     }
   }
-  
+
   &__icon-div {
     width: $val-18;
     height: $val-18;
@@ -99,7 +99,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   &__textarea {
     display: block;
     resize: none;
@@ -113,13 +113,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: $val-4;
     transition: border-color $animation;
-  
+
     &:hover,
     &:focus {
       border-color: $color-decoration;
       fill: $color-decoration;
     }
-  
+
     &::placeholder {
       font-size: $font-rem-12;
       line-height: $l-height-14;
@@ -127,7 +127,7 @@
       color: $color-placeholder;
     }
   }
-  
+
   &__check-label {
     font-size: $font-rem-14;
     line-height: $l-height-24;
@@ -135,7 +135,7 @@
     color: $color-grey;
     display: flex;
     align-items: center;
-  
+
     &::before {
       display: inline-block;
       content: "";
@@ -147,12 +147,12 @@
       margin-right: $val-7;
       transition: background-color $animation, border $animation;
     }
-  
+
     & a {
       color: $color-decoration;
     }
   }
-  
+
   &__check {
     &:checked + .modal-form__check-label::before {
       background-color: $color-decoration;

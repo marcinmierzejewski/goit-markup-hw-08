@@ -4,6 +4,7 @@
   justify-content: center;
   padding-bottom: $val-30;
   padding-top: $val-16;
+
   &__link {
     fill: $color-social;
     display: flex;
@@ -13,15 +14,16 @@
     height: $w44;
     border-radius: 50%;
     transition: fill $animation, background-color $animation;
-      &:hover,
-      &:focus {
+
+    &:hover,
+    &:focus {
       fill: $color-light;
       background-color: $color-decoration;
       border-radius: 50%;
     }
   }
-  
-  &__item { 
+
+  &__item {
     &:not(:last-child) {
       margin-right: $val-10;
     }

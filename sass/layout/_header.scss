@@ -24,28 +24,28 @@
     align-items: center;
     justify-content: center;
 
-      &:hover,
-      &:focus {
-        fill: $color-decoration;
-        color: $color-decoration;
+    &:hover,
+    &:focus {
+      fill: $color-decoration;
+      color: $color-decoration;
     }
   }
-  
+
   &__icon {
     margin-right: $val-10;
     fill: currentColor;
-  }  
+  }
 }
 
 .main-nav {
-  &__list {  
+  &__list {
     position: relative;
-  
+
     &:not(:last-child) {
       margin-right: $val-46;
-    }  
+    }
   }
-  
+
   &__link {
     &::after {
       content: "";
