@@ -34,7 +34,7 @@
     }
   }
 
-  &__items {
+  &__item {
     &:not(:last-child) {
       margin-right: $val-8;
     }

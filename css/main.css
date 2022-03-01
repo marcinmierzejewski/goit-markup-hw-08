@@ -421,7 +421,7 @@ figure {
   margin-left: auto;
 }
 
-.main-contact__list:not(:last-child) {
+.main-contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -441,11 +441,11 @@ figure {
   fill: currentColor;
 }
 
-.main-nav__list {
+.main-nav__item {
   position: relative;
 }
 
-.main-nav__list:not(:last-child) {
+.main-nav__item:not(:last-child) {
   margin-right: 46px;
 }
 
@@ -743,7 +743,7 @@ figure {
   cursor: pointer;
 }
 
-.selection__items:not(:last-child) {
+.selection__item:not(:last-child) {
   margin-right: 8px;
 }
 
