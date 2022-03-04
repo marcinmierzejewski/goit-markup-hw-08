@@ -88,6 +88,16 @@ figure {
   border-bottom: 1px solid #ececec;
 }
 
+.section_hero {
+  padding: 0;
+  background-color: black;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
 .container {
   width: 480px;
   padding: 0 15px;
@@ -97,6 +107,21 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.container_hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 480px 400px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile.jpg");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .container_hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile@2x.jpg");
+  }
 }
 
 .backdrop {
@@ -411,6 +436,7 @@ figure {
   padding: 10px 41px 10px 42px;
   margin-top: 30px;
   border-radius: 4px;
+  margin-bottom: 118px;
 }
 
 .main-nav,
@@ -432,13 +458,14 @@ figure {
 }
 
 .hero-header {
-  font-size: 2.75rem;
-  line-height: 3.75rem;
+  font-size: 1.625rem;
+  line-height: 2.625rem;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  width: 365px;
+  margin-top: 118px;
 }
 
 .advantage {
