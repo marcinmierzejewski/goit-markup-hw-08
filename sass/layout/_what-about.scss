@@ -1,25 +1,28 @@
-.what-about {
-  display: flex;
-
-  &__item {
-    position: relative;
-  }
-
-  &__label {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    padding-top: $val-27;
-    padding-bottom: $val-27;
-    font-weight: $f-weight-700;
-    font-size: $font-rem-14;
-    line-height: $l-height-16;
-    text-align: center;
-    letter-spacing: $l-spacing-3;
-    text-transform: uppercase;
-    color: $color-light;
-    background-color: $color-label;
+@media screen and (min-width: 768px) {
+  .what-about {
+    display: flex;
+  
+    &__item {
+      position: relative;
+    }
+  
+    &__label {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      padding-top: $val-27;
+      padding-bottom: $val-27;
+      font-weight: $f-weight-700;
+      font-size: $font-rem-14;
+      line-height: $l-height-16;
+      text-align: center;
+      letter-spacing: $l-spacing-3;
+      text-transform: uppercase;
+      color: $color-light;
+      background-color: $color-label;
+    }
   }
 }
+

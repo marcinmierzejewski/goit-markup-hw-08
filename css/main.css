@@ -127,6 +127,12 @@ figure {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .container_what-about {
+    display: none;
+  }
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -516,30 +522,30 @@ figure {
   }
 }
 
-.what-about {
-  display: flex;
-}
-
-.what-about__item {
-  position: relative;
-}
-
-.what-about__label {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 768px) {
+  .what-about {
+    display: flex;
+  }
+  .what-about__item {
+    position: relative;
+  }
+  .what-about__label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .our-team {
