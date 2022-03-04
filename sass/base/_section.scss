@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: $val-60;
+  padding-bottom: $val-60;
 
   &_header {
     padding: 0;
@@ -16,8 +18,12 @@
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: cover;
-    // max-width: $max-width;
+    max-width: 480px;
     margin: 0 auto;
+  }
+
+  &_advantage {
+    padding-bottom: 0;
   }
 }
 

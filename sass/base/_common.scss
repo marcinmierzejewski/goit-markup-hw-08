@@ -26,11 +26,11 @@ figure {
 .list {
   list-style: none;
 
-  &_items > li {
-    &:not(:last-child) {
-      margin-right: $val-30;
-    }
-  }
+  // &_items > li {
+  //   &:not(:last-child) {
+  //     margin-right: $val-30;
+  //   }
+  // }
 }
 
 .link {
