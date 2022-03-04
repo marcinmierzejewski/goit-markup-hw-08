@@ -1,0 +1,22 @@
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: calc(100vw - 10px);
+  height: 100vh;
+  background-color: $color-light;
+  display: none;
+
+  &__close-btn {    
+    position: absolute;
+    right: $val-15;
+    top: $val-10;
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+  }
+}
+
+.menu-open {
+  display: block;
+}
