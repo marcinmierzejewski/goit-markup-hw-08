@@ -97,8 +97,20 @@ figure {
   margin: 0 auto;
 }
 
-.section_advantage {
-  padding-bottom: 0;
+.section_our-team {
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 767px) {
+  .section_what-about {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section_advantage {
+    padding-bottom: 0;
+  }
 }
 
 .container {
@@ -310,18 +322,18 @@ figure {
 
 .section-title {
   text-align: center;
-  font-size: 2.25rem;
-  line-height: 2.625rem;
+  font-size: 1.75rem;
+  line-height: 2.0625rem;
   letter-spacing: 0.03em;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .social-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-top: 16px;
 }
 
@@ -344,6 +356,12 @@ figure {
 
 .social-list__item:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-bottom: 30px;
+  }
 }
 
 .submit-btn {
@@ -548,11 +566,8 @@ figure {
   }
 }
 
-.our-team {
-  display: flex;
-}
-
 .our-team__picture {
+  width: 450px;
   background-color: #ffffff;
   text-align: center;
   font-size: 1rem;
@@ -560,6 +575,7 @@ figure {
   letter-spacing: 0.03em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .our-team__caption {
@@ -572,8 +588,17 @@ figure {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: flex;
+  }
+}
+
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients__link {
@@ -583,7 +608,7 @@ figure {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -591,6 +616,18 @@ figure {
 .clients__link:hover, .clients__link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 120px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .footer {

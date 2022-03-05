@@ -1,6 +1,9 @@
 .clients {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  
   &__link {
     fill: $color-social;
     display: flex;
@@ -8,7 +11,7 @@
     justify-content: center;
     border: $val-1 solid #afb1b8;
     border-radius: $val-4;
-    width: $w170;
+    width: $w210;
     height: $w92;
     transition: fill $animation, border $animation;
 
@@ -19,3 +22,37 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__link {
+    width: 226px;
+  }  
+}
+
+@media screen and (min-width: 120px) {
+  .clients__link {
+    width: $w170;
+  }  
+}
+
+// .clients {
+//   display: flex;
+
+//   &__link {
+//     fill: $color-social;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border: $val-1 solid #afb1b8;
+//     border-radius: $val-4;
+//     width: $w170;
+//     height: $w92;
+//     transition: fill $animation, border $animation;
+
+//     &:hover,
+//     &:focus {
+//       fill: $color-decoration;
+//       border: 1px solid $color-decoration;
+//     }
+//   }
+// }

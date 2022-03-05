@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: $val-30;
+  padding-bottom: $val-24;
   padding-top: $val-16;
 
   &__link {
@@ -29,3 +29,42 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-bottom: $val-30;
+  }  
+}
+
+
+// .social-list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding-bottom: $val-30;
+//   padding-top: $val-16;
+
+//   &__link {
+//     fill: $color-social;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: $w44;
+//     height: $w44;
+//     border-radius: 50%;
+//     transition: fill $animation, background-color $animation;
+
+//     &:hover,
+//     &:focus {
+//       fill: $color-light;
+//       background-color: $color-decoration;
+//       border-radius: 50%;
+//     }
+//   }
+
+//   &__item {
+//     &:not(:last-child) {
+//       margin-right: $val-10;
+//     }
+//   }
+// }

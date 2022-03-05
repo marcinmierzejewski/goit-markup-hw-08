@@ -185,18 +185,25 @@
       </section>
 
       <!-- Our team -->
-      <!-- <section class="section section_our-team">
+      <section class="section section_our-team">
         <div class="container container_our-team">
           <h2 class="section-title">Nasz zespół</h2>
           <ul class="our-team list list_items">
             <li>
               <figure class="our-team__picture">
-                <img
+                <picture>
+                  <source  
+                      media="(min-width: 320px)"
+                      srcset="./images/index/face1mobile.jpg 1x, ./images/index/face1mobile@2x.jpg 2x">
+
+                  <img src="./images/index/face1.jpg" alt="face1" />
+              </picture>
+                <!-- <img
                   src="images/index/face1.jpg"
                   alt="Picture of John Doe - Product Designer"
                   width="270"
                   height="260"
-                />
+                /> -->
                 <figcaption>
                   <h4 class="our-team__caption">John Doe</h4>
                   <p class="our-team__content">Product Designer</p>
@@ -367,10 +374,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Clients -->
-      <!-- <section class="section section_clients">
+      <section class="section section_clients">
         <div class="container container_clients">
           <h2 class="section-title">Nasi klienci</h2>
           <ul class="clients list list_items">
@@ -418,7 +425,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
