@@ -101,6 +101,11 @@ figure {
   background-color: #f5f4fa;
 }
 
+.section_footer {
+  background-color: #2f303a;
+  padding: 60px 15px;
+}
+
 @media screen and (max-width: 767px) {
   .section_what-about {
     display: none;
@@ -131,6 +136,12 @@ figure {
   background-size: 480px 400px;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile.jpg");
+}
+
+.container_footer {
+  background-color: #2f303a;
+  color: #ffffff;
+  text-align: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -447,6 +458,8 @@ figure {
 
 .main-logo_footer {
   color: inherit;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .hero-button {
@@ -643,11 +656,7 @@ figure {
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-right-side {
-  margin-left: 70px;
+  margin-bottom: 8px;
 }
 
 .footer-title {
@@ -657,7 +666,7 @@ figure {
   line-height: 1rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: 60px;
 }
 
 .social-footer {
@@ -689,13 +698,12 @@ figure {
 }
 
 .newsletter {
-  margin-left: 78px;
-  padding-top: 12px;
+  text-align: center;
 }
 
 .newsletter__title {
   display: block;
-  width: max-content;
+  text-align: center;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1rem;
@@ -703,14 +711,12 @@ figure {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.newsletter__input-wrapper {
-  display: flex;
+  padding-top: 60px;
 }
 
 .newsletter__input {
-  width: 358px;
+  width: 450px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -753,6 +759,8 @@ figure {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 12px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .newsletter__icon {

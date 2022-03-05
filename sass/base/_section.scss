@@ -21,23 +21,27 @@
     max-width: 480px;
     margin: 0 auto;
   }
-  
+
   &_our-team {
     background-color: $color-light-grey;
   }
-}
 
+  &_footer {
+    background-color: $color-dark;
+    padding: $val-60 $val-15;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .section_what-about {
     display: none;
-  }  
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .section_advantage {
     padding-bottom: 0;
-  }  
+  }
 }
 
 // .section {

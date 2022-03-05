@@ -15,10 +15,16 @@
     background-size: 480px 400px;
     background-repeat: no-repeat;
     background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/index/header-bg-mobile.jpg");
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/header-bg-mobile.jpg");
+  }
+
+  &_footer {
+    background-color: $color-dark;
+    color: $color-light;
+    text-align: center;
   }
 }
 
@@ -27,20 +33,18 @@
   screen and (min-resolution: 2dppx) {
   .container_hero {
     background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/index/header-bg-mobile@2x.jpg");
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/header-bg-mobile@2x.jpg");
   }
 }
 
 @media screen and (max-width: 767px) {
   .container_what-about {
     display: none;
-  }  
+  }
 }
-
-
 
 // .container {
 //   width: $width-container1200;
