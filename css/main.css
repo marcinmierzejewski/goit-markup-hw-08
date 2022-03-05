@@ -36,6 +36,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 figure {
@@ -62,6 +64,25 @@ figure {
   color: #2196f3;
 }
 
+.link_active::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  background-color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .list_items > li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .link::before {
+    bottom: -33px;
+  }
+}
+
 .section {
   display: flex;
   align-items: center;
@@ -78,13 +99,7 @@ figure {
 
 .section_hero {
   padding: 0;
-  background-color: black;
   text-align: center;
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  background-size: cover;
-  max-width: 480px;
-  margin: 0 auto;
 }
 
 .section_our-team {
@@ -96,7 +111,7 @@ figure {
   padding: 60px 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section_what-about {
     display: none;
   }
@@ -134,13 +149,29 @@ figure {
   text-align: center;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
   .container_hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile@2x.jpg");
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .container_hero {
+    background-size: 768px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-tablet.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .container_hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-tablet@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .container_what-about {
     display: none;
   }
@@ -474,15 +505,54 @@ figure {
 }
 
 @media screen and (min-width: 768px) {
-  .main-nav,
-  .main-contact {
+  .main-nav {
     display: flex;
     align-items: center;
+  }
+  .main-nav,
+  .main-contact {
     list-style: none;
     font-size: 0.875rem;
     letter-spacing: 0.02em;
     line-height: 1rem;
     font-weight: 500;
+  }
+  .main-contact {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #757575;
+  }
+  .main-contact__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-contact__link:hover, .main-contact__link:focus {
+    fill: #2196f3;
+    color: #2196f3;
+  }
+  .main-contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .main-nav__item {
+    position: relative;
+  }
+  .main-nav__item:not(:last-child) {
+    margin-right: 46px;
+  }
+  .main-nav__link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main-nav__link:hover::after {
+    background-color: #2196f3;
   }
 }
 
@@ -569,7 +639,7 @@ figure {
 }
 
 .our-team__picture {
-  width: 450px;
+  max-width: 450px;
   background-color: #ffffff;
   text-align: center;
   font-size: 1rem;
@@ -704,7 +774,7 @@ figure {
 }
 
 .newsletter__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -733,7 +803,7 @@ figure {
 }
 
 .newsletter__btn {
-  width: 200px;
+  max-width: 200px;
   background-color: #2196f3;
   display: flex;
   align-items: center;

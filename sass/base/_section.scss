@@ -13,13 +13,12 @@
 
   &_hero {
     padding: 0;
-    background-color: black;
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
-    background-size: cover;
-    max-width: 480px;
-    margin: 0 auto;
+    // background-repeat: no-repeat;
+    // background-position: 50%, 50%;
+    // background-size: cover;
+    // max-width: 480px;
+    // margin: 0 auto;
   }
 
   &_our-team {
@@ -32,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section_what-about {
     display: none;
   }
