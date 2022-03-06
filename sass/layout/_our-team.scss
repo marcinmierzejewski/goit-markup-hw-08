@@ -10,7 +10,6 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px $val-4 $val-4;
-    margin-bottom: 30px;
   }
 
   &__caption {
@@ -24,10 +23,24 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .our-team {
-    display: flex;  
+@media screen and (max-width: 767px) {
+  .our-team__picture {    
+    margin-bottom: 30px;
+  }  
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;  
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    display: flex;
+  }
 }
 
 // .our-team {

@@ -136,6 +136,10 @@ figure {
 }
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .section_hero {
     background-size: 1600px 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-desktop.jpg");
@@ -649,6 +653,7 @@ figure {
 .advantage__header {
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 }
 
 .advantage__contents {
@@ -677,11 +682,29 @@ figure {
   .advantage__header, .advantage__contents, .advantage__icon-container {
     width: 100%;
   }
-  .advantage__header {
-    text-align: center;
-  }
   .advantage__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .advantage__header, .advantage__contents, .advantage__icon-container {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .advantage__header, .advantage__contents, .advantage__icon-container {
+    width: 270px;
   }
 }
 
@@ -720,7 +743,6 @@ figure {
   letter-spacing: 0.03em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 .our-team__caption {
@@ -733,7 +755,21 @@ figure {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .our-team__picture {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .our-team {
     display: flex;
   }

@@ -6,7 +6,8 @@
   &__header {
     text-transform: uppercase;
     font-weight: $f-weight-700;
-  }
+    text-align: center;
+  } 
 
   &__contents {
     line-height: $l-height-24;
@@ -38,14 +39,37 @@
     &__contents,
     &__icon-container {
       width: 100%;
-    }
-
-    &__header {
-      text-align: center;
-    }
-
+    }   
+    
     &__item:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__header,
+    &__contents,
+    &__icon-container {
+      width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &__header,
+    &__contents,
+    &__icon-container {
+      width: $w270;
     }
   }
 }
