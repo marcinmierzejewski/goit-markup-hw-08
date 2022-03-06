@@ -140,7 +140,13 @@ figure {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .section_header {
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+  }
   .section_hero {
+    padding: 0;
     background-size: 1600px 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-desktop.jpg");
   }
@@ -386,6 +392,13 @@ figure {
   letter-spacing: 0.03em;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
 }
 
 .social-list {
@@ -777,9 +790,7 @@ figure {
 
 .clients {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
 }
 
 .clients__link {
@@ -799,13 +810,20 @@ figure {
   border: 1px solid #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .clients {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__link {
     width: 226px;
   }
 }
 
-@media screen and (min-width: 120px) {
+@media screen and (min-width: 1200px) {
   .clients__link {
     width: 170px;
   }

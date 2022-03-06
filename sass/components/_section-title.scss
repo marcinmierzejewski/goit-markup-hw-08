@@ -7,6 +7,13 @@
   margin-bottom: $val-30;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: $font-rem-36;
+    line-height: $l-height-42;
+  }
+}
+
 // .section-title {
 //   text-align: center;
 //   font-size: $font-rem-36;
