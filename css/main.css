@@ -100,6 +100,11 @@ figure {
 .section_hero {
   padding: 0;
   text-align: center;
+  background-size: 480px 400px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile.jpg");
+  background-position: 50%, 50%;
+  margin: 0 auto;
 }
 
 .section_our-team {
@@ -109,6 +114,38 @@ figure {
 .section_footer {
   background-color: #2f303a;
   padding: 60px 15px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .section_hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section_hero {
+    background-size: 768px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-tablet.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section_hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section_hero {
+    background-size: 1600px 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-desktop.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section_hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-desktop@2x.jpg");
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -138,9 +175,6 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: 480px 400px;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile.jpg");
 }
 
 .container_footer {
@@ -149,31 +183,21 @@ figure {
   text-align: center;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
-  .container_hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-mobile@2x.jpg");
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-  }
-  .container_hero {
-    background-size: 768px 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-tablet.jpg");
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .container_hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-tablet@2x.jpg");
   }
 }
 
 @media screen and (max-width: 1199px) {
   .container_what-about {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -509,6 +533,12 @@ figure {
   margin-bottom: 118px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-button {
+    margin-bottom: 200px;
+  }
+}
+
 .main-nav,
 .main-contact {
   display: none;
@@ -599,6 +629,15 @@ figure {
   text-transform: uppercase;
   max-width: 365px;
   margin-top: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    max-width: 696px;
+    margin-top: 200px;
+  }
 }
 
 .advantage {

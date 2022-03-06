@@ -9,7 +9,14 @@
   margin-top: 118px;
 }
 
-
+@media screen and (min-width: 1200px) {
+  .hero-header {
+    font-size: $font-rem-44;
+    line-height: $l-height-60;
+    max-width: 696px;
+    margin-top: 200px;
+  }
+}
 
 // .hero-header {
 //   font-size: $font-rem-44;
