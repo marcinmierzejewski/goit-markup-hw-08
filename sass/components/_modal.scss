@@ -1,8 +1,9 @@
 .modal {
   position: absolute;
+  width: $w528;
+  min-height: $w581;
   left: 50%;
   top: 50%;
-  width: $w450;
   transform: translate(-50%, -50%) scale(1);
   margin: 0 auto;
   background-color: $color-light;
@@ -36,6 +37,18 @@
       fill: $color-decoration;
     }
   }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+  }  
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: $w450;
+  }  
 }
 
 .modal-form {

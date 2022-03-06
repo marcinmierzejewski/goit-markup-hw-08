@@ -34,7 +34,7 @@
 
   &_footer {
     background-color: $color-dark;
-    padding: $val-60 $val-15;
+    padding: $val-60 0;
   }
 }
 
@@ -83,17 +83,25 @@
       text-align: center;
       border-bottom: $val-1 solid $color-border-header;
     }
+
+    &_hero {
+      padding: 0;
+      background-size: 1600px 600px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/index/header-bg-desktop.jpg");
+    }
+
+    &_footer {
+      padding: $val-60 0;
+    }
   }
 
-  .section_hero {
-    padding: 0;
-    background-size: 1600px 600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/index/header-bg-desktop.jpg");
-  }
+  
+
+
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

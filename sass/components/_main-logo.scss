@@ -29,6 +29,11 @@
     padding-top: $val-24;
     padding-bottom: $val-25;
     margin-right: $val-93;
+    
+    &_footer {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
   }
 }
 

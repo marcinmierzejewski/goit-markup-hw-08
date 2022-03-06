@@ -1,11 +1,17 @@
-.mobile-menu {
+.mobile {
   position: fixed;
   left: 0;
   top: 0;
-  min-width: 100vw;
-  height: 100vh;
+  width: 100%;
+  z-index: 100;
   background-color: $color-light;
   display: none;
+  margin: 0 auto;
+  transition: all $animation;
+
+  &__wrapper {
+    padding: 48px 40px;
+  }
 
   &__close-btn {    
     position: absolute;
@@ -14,9 +20,82 @@
     background-color: transparent;
     border: none;
     line-height: 0;
+
+    &:hover,
+    &:focus {
+      fill: $color-decoration;
+    }
   }
 }
 
 .menu-open {
-  display: block;
+  display: block;  
+}
+
+.mobile-menu {
+  margin-bottom: 302px;  
+
+  &__item {
+    text-align: left;
+    font-weight: $f-weight-500;
+    font-size: $font-rem-40;
+    line-height: $l-height-47;
+    letter-spacing: $l-spacing-2;
+
+    &:first-child {
+      color: $color-decoration;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.mobile-contact {
+  font-weight: $f-weight-500;
+  font-size: $font-rem-24;
+  line-height: $l-height-28;
+  letter-spacing: $l-spacing-2;
+  color: $color-grey;
+  text-align: left;
+  margin-bottom: 64px; 
+
+  &__item {
+    &:first-child {
+    font-size: $font-rem-34;
+    line-height: $l-height-40;
+    color: $color-decoration;
+    margin-bottom: 32px;
+    }
+  }
+}
+
+.mobile-social {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: $f-weight-500;
+  font-size: $font-rem-18;
+  line-height: $l-height-22;
+  letter-spacing: $l-spacing-2;
+  color: $color-decoration;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      width: 1px;
+      height: 22px;
+      position: absolute;
+      bottom: 0;
+      margin-left: 10px;
+      background-color: rgba(33, 33, 33, 0.2);
+
+    }
+  }
 }
