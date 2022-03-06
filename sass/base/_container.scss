@@ -11,7 +11,8 @@
   &_hero {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    height: 400px;    
   }
 
   &_footer {
@@ -36,6 +37,10 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: $width-container1200;
+
+    &_hero {
+      height: 600px;
+    }
 
     &_footer {
       display: flex;  

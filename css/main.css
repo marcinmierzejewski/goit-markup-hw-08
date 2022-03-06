@@ -188,6 +188,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
 }
 
 .container_footer {
@@ -211,6 +212,9 @@ figure {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .container_hero {
+    height: 600px;
   }
   .container_footer {
     display: flex;
@@ -644,13 +648,6 @@ figure {
   padding: 10px 41px 10px 42px;
   margin-top: 30px;
   border-radius: 4px;
-  margin-bottom: 118px;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-button {
-    margin-bottom: 200px;
-  }
 }
 
 .main-nav,
@@ -742,7 +739,6 @@ figure {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 365px;
-  margin-top: 118px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -750,7 +746,6 @@ figure {
     font-size: 2.75rem;
     line-height: 3.75rem;
     max-width: 696px;
-    margin-top: 200px;
   }
 }
 
