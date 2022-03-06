@@ -19,16 +19,11 @@
   }
 
   .main-contact {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: $font-rem-12;
     color: $color-grey;
-    // margin-left: auto;
-
-    // &__item {
-    //   &:not(:last-child) {
-    //     margin-right: $val-50;
-    //   }
-    // }
 
     &__link {
       display: flex;
@@ -43,7 +38,7 @@
     }
 
     &__icon {
-      margin-right: $val-10;
+      margin-right: $val-8;
       fill: currentColor;
     }
   }
@@ -53,7 +48,7 @@
       position: relative;
 
       &:not(:last-child) {
-        margin-right: $val-46;
+        margin-right: $val-60;
       }
     }
 
@@ -75,6 +70,41 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .main-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: $font-rem-14;
+    margin-left: auto;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: $val-50;
+      }
+    }
+    &__icon {
+      margin-right: $val-9;
+    }
+  }
+
+  .main-nav {
+    
+    &__item {
+      &:not(:last-child) {
+        margin-right: $val-46;
+      }
+    }
+
+    &__link {
+      &::after {
+        bottom: -33px;
+      }
+    }
+  }
+}
+
 
 // .main-nav,
 // .main-contact {

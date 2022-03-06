@@ -22,6 +22,16 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    font-size: $font-rem-26;
+    line-height: $l-height-31;
+    padding-top: $val-24;
+    padding-bottom: $val-25;
+    margin-right: $val-93;
+  }
+}
+
 // .main-logo {
 //   font-family: $font-raleway;
 //   color: $color-logo;

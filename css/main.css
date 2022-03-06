@@ -482,6 +482,16 @@ figure {
   padding-top: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    font-size: 1.625rem;
+    line-height: 1.9375rem;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
+
 .hero-button {
   background-color: #2196f3;
   font-family: inherit;
@@ -518,7 +528,9 @@ figure {
     font-weight: 500;
   }
   .main-contact {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 0.75rem;
     color: #757575;
   }
@@ -532,14 +544,14 @@ figure {
     color: #2196f3;
   }
   .main-contact__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
   }
   .main-nav__item {
     position: relative;
   }
   .main-nav__item:not(:last-child) {
-    margin-right: 46px;
+    margin-right: 60px;
   }
   .main-nav__link::after {
     content: "";
@@ -553,6 +565,28 @@ figure {
   }
   .main-nav__link:hover::after {
     background-color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-left: auto;
+  }
+  .main-contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .main-contact__icon {
+    margin-right: 9px;
+  }
+  .main-nav__item:not(:last-child) {
+    margin-right: 46px;
+  }
+  .main-nav__link::after {
+    bottom: -33px;
   }
 }
 
