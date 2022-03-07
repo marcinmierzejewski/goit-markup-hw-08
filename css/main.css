@@ -1166,7 +1166,7 @@ figure {
 }
 
 .gallery__picture {
-  width: 450px;
+  width: 100%;
 }
 
 .gallery__overlay {
