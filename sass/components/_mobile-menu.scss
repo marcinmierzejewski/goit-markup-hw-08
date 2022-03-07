@@ -5,9 +5,11 @@
   width: 100%;
   z-index: 100;
   background-color: $color-light;
-  display: none;
   margin: 0 auto;
-  transition: all $animation;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: transform var(--animation);
 
   &__wrapper {
     padding: 48px 40px;
@@ -29,7 +31,10 @@
 }
 
 .menu-open {
-  display: block;  
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform $animation, visibility $animation, opacity $animation;  
 }
 
 .mobile-menu {
