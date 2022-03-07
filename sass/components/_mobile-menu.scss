@@ -42,9 +42,9 @@
     line-height: $l-height-47;
     letter-spacing: $l-spacing-2;
 
-    &:first-child {
-      color: $color-decoration;
-    }
+    // &:first-child {
+    //   color: $color-decoration;
+    // }
 
     &:not(:last-child) {
       margin-bottom: 32px;

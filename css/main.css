@@ -74,6 +74,10 @@ figure {
   background-color: #2196f3;
 }
 
+.menu-active {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 1200px) {
   .list_items > li:not(:last-child) {
     margin-right: 30px;
@@ -541,10 +545,6 @@ figure {
   font-size: 2.5rem;
   line-height: 2.9375rem;
   letter-spacing: 0.02em;
-}
-
-.mobile-menu__item:first-child {
-  color: #2196f3;
 }
 
 .mobile-menu__item:not(:last-child) {
