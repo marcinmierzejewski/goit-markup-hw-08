@@ -28,7 +28,7 @@
   }  
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
   }  
@@ -39,25 +39,3 @@
     width: $w170;
   }  
 }
-
-// .clients {
-//   display: flex;
-
-//   &__link {
-//     fill: $color-social;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     border: $val-1 solid #afb1b8;
-//     border-radius: $val-4;
-//     width: $w170;
-//     height: $w92;
-//     transition: fill $animation, border $animation;
-
-//     &:hover,
-//     &:focus {
-//       fill: $color-decoration;
-//       border: 1px solid $color-decoration;
-//     }
-//   }
-// }

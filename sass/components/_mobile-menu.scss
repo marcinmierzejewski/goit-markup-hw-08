@@ -47,10 +47,6 @@
     line-height: $l-height-47;
     letter-spacing: $l-spacing-2;
 
-    // &:first-child {
-    //   color: $color-decoration;
-    // }
-
     &:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -100,7 +96,6 @@
       bottom: 0;
       margin-left: 10px;
       background-color: rgba(33, 33, 33, 0.2);
-
     }
   }
 }

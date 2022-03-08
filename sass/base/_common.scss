@@ -70,39 +70,3 @@ figure {
     bottom: $val--33;
   }
 }
-
-// .list {
-//   list-style: none;
-
-//   &_items > li {
-//     &:not(:last-child) {
-//       margin-right: $val-30;
-//     }
-//   }
-// }
-
-// .link {
-//   text-decoration: none;
-//   transition: color $animation;
-//   color: inherit;
-
-//   &:hover,
-//   &:focus {
-//     color: $color-decoration;
-//   }
-
-//   &_active {
-//     width: 100%;
-//     color: $color-decoration;
-
-//     &::before {
-//       content: "";
-//       width: 100%;
-//       height: $w4;
-//       position: absolute;
-//       bottom: $val--33;
-//       left: 0;
-//       background-color: $color-decoration;
-//     }
-//   }
-// }

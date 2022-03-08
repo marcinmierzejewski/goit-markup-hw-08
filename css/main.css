@@ -111,6 +111,10 @@ figure {
   margin: 0 auto;
 }
 
+.section_what-about {
+  display: none;
+}
+
 .section_our-team {
   background-color: #f5f4fa;
 }
@@ -154,26 +158,20 @@ figure {
     background-size: 1600px 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-desktop.jpg");
   }
+  .section_what-about {
+    display: flex;
+  }
   .section_footer {
     padding: 60px 0;
+  }
+  .section_advantage {
+    padding-bottom: 0;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section_hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-bg-desktop@2x.jpg");
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .section_what-about {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section_advantage {
-    padding-bottom: 0;
   }
 }
 
@@ -245,8 +243,6 @@ figure {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -292,6 +288,14 @@ figure {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -411,6 +415,13 @@ figure {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border: 2px solid #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check-label {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
 }
 
 .section-title {
@@ -812,14 +823,13 @@ figure {
 @media screen and (min-width: 1200px) {
   .advantage {
     display: flex;
-    flex-wrap: nowrap;
   }
   .advantage__header, .advantage__contents, .advantage__icon-container {
     width: 270px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .what-about {
     display: flex;
   }
@@ -872,17 +882,16 @@ figure {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .our-team {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team {
-    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -915,7 +924,7 @@ figure {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
   }
